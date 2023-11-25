@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { personalData } from "./personalData";
+import Skills from "./Skills";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <header></header>
+      <main>
+        <Skills
+          title="My skillset includes"
+          body={personalData.currentSkills}
+        />
+        <Skills
+          title="What I want to learn next"
+          body={personalData.futureSkills}
+        />
+        <article></article>
+      </main >
+      <footer></footer>
+    </>
   );
 }
 
