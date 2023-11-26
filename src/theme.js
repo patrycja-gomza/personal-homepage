@@ -3,7 +3,6 @@ export const theme = {
         white: "#FFFFFF",
         whiteLilac: "#FBFBFE",
         mercury: "#E5E5E5",
-        iron: "#D1D5DA",
         silver: "#C4C4C4",
         slateGray: "#6E7E91",
         dodgerBlue: "#2188FF",
@@ -12,15 +11,15 @@ export const theme = {
     },
 
     shadow: {
-        boxShadow1: "0px 16px 58px 0px #090A3308",
-        boxShadow2: "0px -2px 50px 0px #090A3305",
+        boxShadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
     },
 
     border: {
-        border: "6px solid #D1D5DA4D",
+        borderHeader: "1px solid #D1D5DA4D",
+        borderTile: "6px solid #D1D5DA4D",
     },
 
-    font: {
+    fontSize: {
         font12: "12px",
         font14: "14px",
         font16: "16px",
@@ -28,6 +27,13 @@ export const theme = {
         font20: "20px",
         font30: "30px",
         font38: "38px",
+    },
+
+    fontWeight: {
+        font400: "400",
+        font600: "600",
+        font700: "700",
+        font900: "900",
     },
 
     breakpoint: {
