@@ -1,17 +1,17 @@
-import { ReactComponent as ListDotIcon } from './Ellipse31.svg';
+import { ReactComponent as ListMarker } from './Ellipse31.svg';
+import { StyledSection, SectionHeader, SectionBody, ListItem } from './styled';
 
 const Skills = ({ title, body }) => (
-    <section>
-        <header>{title}</header>
-        <body>
+    <StyledSection>
+        <SectionHeader>{title}</SectionHeader>
+        <SectionBody>
             {body.map((skill, index) => (
-                <li key={index}>
-                    <ListDotIcon />
-                    {skill}
-                </li>
+                <ListItem key={index}>
+                    <ListMarker /> {skill}
+                </ListItem>
             ))}
-        </body>
-    </section>
+        </SectionBody>
+    </StyledSection>
 );
 
 export default Skills;
