@@ -1,4 +1,3 @@
-import { personalData } from "./personalData";
 import Skills from "./Skills";
 
 function App() {
@@ -8,11 +7,11 @@ function App() {
       <main>
         <Skills
           title="My skillset includes"
-          body={personalData.currentSkills}
+          body="currentSkills"
         />
         <Skills
           title="What I want to learn next"
-          body={personalData.futureSkills}
+          body="futureSkills"
         />
         <article></article>
       </main >
