@@ -1,9 +1,10 @@
+import Header from "./Header";
 import Skills from "./Skills";
 
 function App() {
   return (
     <>
-      <header></header>
+      <Header />
       <main>
         <Skills
           title="My skillset includes 🛠️"
