@@ -3,6 +3,8 @@
     "description": "👩🏼💻 I'm passionate Frontend Developer in love with React, currently looking for first job opportunities.",
     "email": "patrycja.gomza@gmail.com",
     "githubProfile": "https://github.com/patrycja-gomza",
+    "githubAPI_URL": "https://api.github.com/users/patrycja-gomza/repos",
+    
     "currentSkills": [
         "Semantic & accessible HTML",
         "React Router",
