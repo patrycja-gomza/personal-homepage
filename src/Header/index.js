@@ -1,6 +1,6 @@
 import profilePhoto from './pgomza.jpg';
 import personalData from '../personalData.json';
-import { ReactComponent as EmailIcon } from './Message.svg';
+import { ReactComponent as EmailIcon } from './message.svg';
 import { StyledHeader, StyledPhoto, Wrapper, Intro, Title, Paragraph, Button } from './styled';
 
 const Header = () => {
