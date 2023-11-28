@@ -1,5 +1,7 @@
 import profilePhoto from './P.Gomza.jpg';
 import personalData from '../personalData.json';
+import { ReactComponent as EmailIcon } from './Message.svg';
+import { StyledHeader, StyledPhoto, Wrapper, Intro, Title, Paragraph, Button } from './styled';
 
 const Header = () => {
     const name = personalData.name;
@@ -7,17 +9,17 @@ const Header = () => {
     const email = personalData.email;
 
     return (
-        <header>
-            <img src={profilePhoto} alt="Patrycja Gomza" />
-            <div>
-                <span>THIS IS</span>
-                <h1> {name} </h1>
-                <p>{description}</p>
-                <a href={`mailto:${email}`} title={email}>
-                    <button>HIRE ME</button>
-                </a>
-            </div>
-        </header>
+        <StyledHeader>
+            <StyledPhoto src={profilePhoto} alt="Patrycja Gomza" />
+            <Wrapper>
+                <Intro>This is</Intro>
+                <Title>{name}</Title>
+                <Paragraph>{description}</Paragraph>
+                <Button href={`mailto:${email}`} title={email}>
+                    <EmailIcon /> Hire Me
+                </Button>
+            </Wrapper>
+        </StyledHeader>
     );
 };
 
