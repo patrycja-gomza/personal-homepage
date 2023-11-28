@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     max-width: 1089px;
+    margin-top: 115px;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
