@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Skills from "./Skills";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           title="What I want to learn next 🚀"
           body="futureSkills"
         />
-        <article></article>
+        <Portfolio />
       </main >
       <footer></footer>
     </>
