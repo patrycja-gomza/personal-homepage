@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from "react";
-import { ReactComponent as GitHubIcon } from './mark-github.svg';
+import { ReactComponent as GitHubIcon } from '../images/mark-github.svg';
 import personalData from '../personalData.json';
 import {
     StyledArticle,

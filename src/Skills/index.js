@@ -1,4 +1,4 @@
-import { ReactComponent as ListMarker } from './ellipse31.svg';
+import { ReactComponent as ListMarker } from '../images/ellipse31.svg';
 import personalData from '../personalData.json';
 import { StyledSection, SectionHeader, SectionBody, ListItem } from './styled';
 
