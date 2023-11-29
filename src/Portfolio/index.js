@@ -30,6 +30,12 @@ const Portfolio = () => {
         })();
     }, []);
 
+    const shortenProjectName = (name) => {
+        const words = name.split('-');
+        const initials = words.map(word => word.slice(0, 2));
+        return initials.join('');
+    };
+
     return (
         <StyledArticle>
             <StyledHeader>
@@ -47,7 +53,7 @@ const Portfolio = () => {
                                 <>
                                     Demo: {" "}
                                     <Link href={project.homepage} target="_blank" rel="noopener noreferrer">
-                                        https://{(project.name)}.demo.com
+                                        https://{shortenProjectName(project.name)}.demo.com
                                     </Link>
                                 </>
                             )}
@@ -55,7 +61,7 @@ const Portfolio = () => {
                                 <>
                                     Code:{" "}
                                     <Link href={project.html_url} target="_blank" rel="noopener noreferrer">
-                                        https://{(project.name)}.code.com
+                                        https://{shortenProjectName(project.name)}.code.com
                                     </Link>
                                 </>
                             )}
