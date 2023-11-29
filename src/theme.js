@@ -25,6 +25,7 @@ export const theme = {
         font16: "16px",
         font18: "18px",
         font20: "20px",
+        font24: "24px",
         font30: "30px",
         font38: "38px",
     },
