@@ -2,6 +2,17 @@ import axios from 'axios';
 import { useState, useEffect } from "react";
 import { ReactComponent as GitHubIcon } from './mark-github.svg';
 import personalData from '../personalData.json';
+import {
+    StyledArticle,
+    StyledHeader,
+    Title, Subtitle,
+    Wrapper,
+    Tile,
+    ProjectTitle,
+    ProjectDescription,
+    ProjectLinks,
+    Link
+} from './styled';
 
 const Portfolio = () => {
     const [projects, setProjects] = useState();
@@ -20,39 +31,39 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <article>
-            <header>
+        <StyledArticle>
+            <StyledHeader>
                 <GitHubIcon />
-                <h2>Portfolio</h2>
-                <p>My recent projects</p>
-            </header>
-            <div>
+                <Title>Portfolio</Title>
+                <Subtitle>My recent projects</Subtitle>
+            </StyledHeader>
+            <Wrapper>
                 {projects && projects.map((project) => (
-                    <div key={project.id}>
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                        <div>
+                    <Tile key={project.id}>
+                        <ProjectTitle>{project.name}</ProjectTitle>
+                        <ProjectDescription>{project.description}</ProjectDescription>
+                        <ProjectLinks>
                             {project.homepage && (
                                 <>
-                                    Demo:{" "}
-                                    <a href={project.homepage} target="_blank" rel="noopener noreferrer">
-                                        {project.homepage}
-                                    </a>
+                                    Demo: {" "}
+                                    <Link href={project.homepage} target="_blank" rel="noopener noreferrer">
+                                        https://{(project.name)}.demo.com
+                                    </Link>
                                 </>
                             )}
                             {project.html_url && (
                                 <>
                                     Code:{" "}
-                                    <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                                        {project.html_url}
-                                    </a>
+                                    <Link href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                        https://{(project.name)}.code.com
+                                    </Link>
                                 </>
                             )}
-                        </div>
-                    </div>
+                        </ProjectLinks>
+                    </Tile>
                 ))}
-            </div>
-        </article>
+            </Wrapper>
+        </StyledArticle>
     );
 };
 
