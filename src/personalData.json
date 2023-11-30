@@ -2,9 +2,12 @@
     "name": "Patrycja Gomza",
     "description": "👩🏼💻 I'm passionate Frontend Developer in love with React, currently looking for first job opportunities.",
     "email": "patrycja.gomza@gmail.com",
-    "githubProfile": "https://github.com/patrycja-gomza",
+    "github": "https://github.com/patrycja-gomza",
+    "facebook": "https://www.facebook.com/patrycja.kantorowska/",
+    "linkedin": "https://github.com/patrycja-gomza",
+    "instagram": "https://www.instagram.com/patrycja.gomza/",
+    "contactInvitation": "I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me",
     "githubAPI_URL": "https://api.github.com/users/patrycja-gomza/repos",
-    
     "currentSkills": [
         "Semantic & accessible HTML",
         "React Router",
