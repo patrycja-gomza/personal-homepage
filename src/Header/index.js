@@ -1,6 +1,8 @@
 import profilePhoto from '../images/pgomza.jpg';
 import personalData from '../personalData.json';
 import { ReactComponent as EmailIcon } from '../images/message.svg';
+import emojiWoman from "../images/woman.svg";
+import emojiPc from "../images/pc.svg";
 import { StyledHeader, StyledPhoto, Wrapper, Intro, Title, Paragraph, Button } from './styled';
 
 const Header = () => {
@@ -14,7 +16,12 @@ const Header = () => {
             <Wrapper>
                 <Intro>This is</Intro>
                 <Title>{name}</Title>
-                <Paragraph>{description}</Paragraph>
+                <Paragraph>
+                    <img src={emojiWoman} alt="emoji" height="30px" style={{ verticalAlign: 'middle' }} />
+                    <img src={emojiPc} alt="emoji" height="30px" style={{ verticalAlign: 'middle' }} />
+                    {" "}
+                    {description}
+                </Paragraph>
                 <Button href={`mailto:${email}`} title={email}>
                     <EmailIcon /> Hire Me
                 </Button>
