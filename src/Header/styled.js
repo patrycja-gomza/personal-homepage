@@ -13,7 +13,7 @@ export const StyledPhoto = styled.img`
     height: 398px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center 15%;
 `;
 
 export const Wrapper = styled.div`
