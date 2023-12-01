@@ -1,5 +1,7 @@
 import personalData from '../personalData.json';
-import { Intro, Title, Paragraph } from "../Header/styled";
+import { Intro } from "../Header/styled";
+import { StyledFooter, FooterTitle, FooterParagraph, Wrapper } from './styled';
+import { ReactComponent as EmojiHand } from '../images/hand-fingers-crossed.svg';
 import { ReactComponent as LogoGithub } from '../images/logo-github.svg';
 import { ReactComponent as LogoFacebook } from '../images/logo-facebook.svg';
 import { ReactComponent as LogoLinkedin } from '../images/logo-linkedin.svg';
@@ -15,16 +17,19 @@ const Footer = () => {
     const security = { target: '_blank', rel: 'noopener noreferrer' };
 
     return (
-        <footer>
+        <StyledFooter>
             <Intro>Let's talk!</Intro>
 
-            <Title as="a" href={`mailto:${email}`} title={email} {...security}>
+            <FooterTitle as="a" href={`mailto:${email}`} title={email} {...security}>
                 {email}
-            </Title>
+            </FooterTitle>
 
-            <Paragraph>{contactInvitation}</Paragraph>
+            <FooterParagraph>
+                {contactInvitation}
+                <EmojiHand style={{ verticalAlign: 'middle' }} />
+            </FooterParagraph>
 
-            <>
+            <Wrapper>
                 <a href={github} title={github} {...security}>
                     <LogoGithub />
                 </a>
@@ -37,8 +42,8 @@ const Footer = () => {
                 <a href={instagram} title={instagram} {...security}>
                     <LogoInstagram />
                 </a>
-            </>
-        </footer>
+            </Wrapper>
+        </StyledFooter>
     );
 };
 
