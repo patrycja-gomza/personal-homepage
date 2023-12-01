@@ -2,12 +2,16 @@ import { ReactComponent as ListMarker } from '../images/ellipse31.svg';
 import personalData from '../personalData.json';
 import { StyledSection, SectionHeader, SectionBody, ListItem } from './styled';
 
-const Skills = ({ title, body }) => {
+const Skills = ({ title, emoji, body }) => {
     const skills = personalData[body];
 
     return (
         <StyledSection>
-            <SectionHeader>{title}</SectionHeader>
+            <SectionHeader>
+                {title}
+                {" "}
+                <img src={emoji} alt="emoji" height="32px" style={{ verticalAlign: 'middle' }} />
+            </SectionHeader>
             <SectionBody>
                 {skills.map((skill, index) => (
                     <ListItem key={index}>
