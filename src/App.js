@@ -1,3 +1,4 @@
+import Switch from "./Switch";
 import Header from "./Header";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
@@ -8,6 +9,7 @@ import emojiRocket from "./images/rocket.svg";
 function App() {
   return (
     <>
+      <Switch />
       <Header />
       <main>
         <Skills
