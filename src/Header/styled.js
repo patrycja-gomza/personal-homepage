@@ -68,6 +68,7 @@ export const Button = styled.button`
     font-weight: ${({ theme }) => theme.fontWeight.font600};
     line-height: normal;
     letter-spacing: 1px;
+    text-decoration: none;
 `;
 
 

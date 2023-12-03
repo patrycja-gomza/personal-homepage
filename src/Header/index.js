@@ -9,6 +9,7 @@ const Header = () => {
     const name = personalData.name;
     const description = personalData.description;
     const email = personalData.email;
+    const security = { target: '_blank', rel: 'noopener noreferrer' };
 
     return (
         <StyledHeader>
@@ -22,7 +23,7 @@ const Header = () => {
                     {" "}
                     {description}
                 </Paragraph>
-                <Button href={`mailto:${email}`} title={email}>
+                <Button as="a" href={`mailto:${email}`} title={email} {...security}>
                     <EmailIcon /> Hire Me
                 </Button>
             </Wrapper>
@@ -31,3 +32,4 @@ const Header = () => {
 };
 
 export default Header;
+
