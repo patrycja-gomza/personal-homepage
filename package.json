@@ -1,8 +1,8 @@
 {
-  "name": "personal-homepage",
+  "name": "personal-homepage-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://patrycja-gomza.github.io/personal-homepage/",
+  "homepage": "https://patrycja-gomza.github.io/personal-homepage-react/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.0",
     "@testing-library/jest-dom": "^5.17.0",
