@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Brightness } from "../images/brightness.svg";
+import { ReactComponent as Brightness } from "../../images/brightness.svg";
 
 export const SliderWrapper = styled.div`
 	position: relative;

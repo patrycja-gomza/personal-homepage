@@ -1,7 +1,7 @@
-import { ReactComponent as ListMarker } from '../images/ellipse31.svg';
-import personalData from '../personalData.json';
+import { ReactComponent as ListMarker } from '../../images/ellipse31.svg';
+import personalData from '../../personalData.json';
 import { StyledSection, SectionBody, ListItem } from './styled';
-import { SectionHeader } from '../styled';
+import { SectionHeader } from '../../styled';
 
 const Skills = ({ title, emoji, body }) => {
     const skills = personalData[body];

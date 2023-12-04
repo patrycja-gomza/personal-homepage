@@ -1,8 +1,8 @@
-import Switch from "./Switch";
-import Header from "./Header";
-import Skills from "./Skills";
-import Portfolio from "./Portfolio";
-import Footer from "./Footer";
+import Switch from "./features/Switch";
+import Header from "./common/Header";
+import Skills from "./common/Skills";
+import Portfolio from "./features/Portfolio";
+import Footer from "./common/Footer";
 import emojiTools from "./images/tools.svg";
 import emojiRocket from "./images/rocket.svg";
 
