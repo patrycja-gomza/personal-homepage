@@ -8,18 +8,6 @@ export const StyledSection = styled.section`
   margin-top: 72px;
 `;
 
-export const SectionHeader = styled.h2`
-  font-size: ${({ theme }) => theme.fontSize.font30};
-  font-style: normal;
-  font-weight: ${({ theme }) => theme.fontWeight.font900};
-  line-height: normal;
-  letter-spacing: 1.5px;
-  color: ${({ theme }) => theme.color.mineShaft};
-  border-bottom: ${({ theme }) => theme.border.borderHeader};
-  padding-bottom: 15px;
-  margin: 0;
-`;
-
 export const SectionBody = styled.ul`
   list-style: none;
   padding-left: 0;
