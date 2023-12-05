@@ -1,4 +1,4 @@
-import { ReactComponent as Slider } from '../../images/slider.svg';
+import { ReactComponent as Slider } from '../../../images/slider.svg';
 import {
     StyledSwitch,
     SwitchIcon,

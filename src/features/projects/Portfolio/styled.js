@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Paragraph, SectionHeader } from "../../styled";
+import { Paragraph, SectionHeader } from "../../../styled";
 
 export const StyledArticle = styled.article`
     margin: 72px 0 120px;

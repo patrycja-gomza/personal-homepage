@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ReactComponent as GitHubIcon } from '../../images/mark-github.svg';
+import { ReactComponent as GitHubIcon } from '../../../images/mark-github.svg';
 import {
     StyledArticle,
     StyledHeader,
