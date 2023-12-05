@@ -1,7 +1,6 @@
-import axios from 'axios';
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { ReactComponent as GitHubIcon } from '../../images/mark-github.svg';
-import personalData from '../../personalData.json';
 import {
     StyledArticle,
     StyledHeader,
@@ -13,22 +12,16 @@ import {
     ProjectLinks,
     Link
 } from './styled';
+import { fetchProjects, selectProjects, selectLoading } from '../projectsSlice';
 
 const Portfolio = () => {
-    const [projects, setProjects] = useState();
+    const dispatch = useDispatch();
+    const projects = useSelector(selectProjects);
+    const loading = useSelector(selectLoading);
 
     useEffect(() => {
-        (async () => {
-            try {
-                const response = await axios.get(personalData.githubAPI_URL);
-                const data = response.data;
-
-                setProjects(data);
-            } catch (error) {
-                console.error('Error fetching GitHub projects:', error);
-            }
-        })();
-    }, []);
+        dispatch(fetchProjects());
+    }, [dispatch]);
 
     const shortenProjectName = (name) => {
         const words = name.split('-');
@@ -44,6 +37,7 @@ const Portfolio = () => {
                 <Subtitle>My recent projects</Subtitle>
             </StyledHeader>
             <Wrapper>
+                {loading && <p>Please wait, projects are being loaded...</p>}
                 {projects && projects.map((project) => (
                     <Tile key={project.id}>
                         <ProjectTitle>{project.name}</ProjectTitle>
