@@ -13,6 +13,7 @@ import {
     Link
 } from './styled';
 import { fetchProjects, selectProjects, selectLoading } from '../projectsSlice';
+import Loading from "../Loading";
 
 const Portfolio = () => {
     const dispatch = useDispatch();
@@ -36,8 +37,8 @@ const Portfolio = () => {
                 <Title>Portfolio</Title>
                 <Subtitle>My recent projects</Subtitle>
             </StyledHeader>
+            {loading && <Loading />}
             <Wrapper>
-                {loading && <p>Please wait, projects are being loaded...</p>}
                 {projects && projects.map((project) => (
                     <Tile key={project.id}>
                         <ProjectTitle>{project.name}</ProjectTitle>
