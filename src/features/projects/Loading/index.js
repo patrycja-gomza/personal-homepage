@@ -1,11 +1,12 @@
-import { LoadingContainer, LoadingText, LoadingSpinner } from './styled';
+import { LoadingSpinner } from './styled';
+import { StatusContainer, StatusText } from '../styled';
 
 const Loading = () => {
     return (
-        <LoadingContainer>
-            <LoadingText>Please wait, projects are being loaded...</LoadingText>
+        <StatusContainer>
+            <StatusText>Please wait, projects are being loaded...</StatusText>
             <LoadingSpinner />
-        </LoadingContainer>
+        </StatusContainer>
     );
 };
 
