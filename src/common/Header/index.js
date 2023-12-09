@@ -3,8 +3,8 @@ import personalData from '../../personalData.json';
 import { ReactComponent as EmailIcon } from '../../images/message.svg';
 import emojiWoman from "../../images/woman.svg";
 import emojiPc from "../../images/pc.svg";
-import { StyledHeader, StyledPhoto, Wrapper, Button } from './styled';
-import { Intro, Title, Paragraph } from '../../styled';
+import { StyledHeader, StyledPhoto, Wrapper } from './styled';
+import { Intro, Title, Paragraph, Button } from '../../styled';
 
 const Header = () => {
     const name = personalData.name;

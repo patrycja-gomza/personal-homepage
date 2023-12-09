@@ -21,25 +21,3 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
 `;
-
-export const Button = styled.button`
-    width: fit-content;
-    display: inline-flex;
-    padding: 12px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    border: ${({ theme }) => theme.border.borderHeader};
-    border-radius: 4px;
-    background-color: ${({ theme }) => theme.color.scienceBlue};
-    color: ${({ theme }) => theme.color.white};
-    text-align: center;
-    font-size: ${({ theme }) => theme.fontSize.font20};
-    font-style: normal;
-    font-weight: ${({ theme }) => theme.fontWeight.font600};
-    line-height: normal;
-    letter-spacing: 1px;
-    text-decoration: none;
-`;
-
-
