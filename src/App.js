@@ -1,4 +1,4 @@
-import Switch from "./features/motifs/Switch";
+import Switch from "./features/modes/Switch";
 import Header from "./common/Header";
 import Skills from "./common/Skills";
 import Portfolio from "./features/projects/Portfolio";
