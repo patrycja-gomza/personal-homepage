@@ -1,6 +1,6 @@
 import { takeLatest, call, put, delay } from "redux-saga/effects";
 import { getProjectsFromAPI } from "./getProjectsFromAPI";
-import { fetchProjects, setProjects, setLoading } from "./projectsSlice";
+import { fetchProjects, setProjects, setLoading, setError } from "./projectsSlice";
 
 function* fetchProjectsHandler() {
     try {
@@ -10,7 +10,7 @@ function* fetchProjectsHandler() {
         yield put(setProjects(projects));
     }
     catch (error) {
-        yield call(alert, "Error fetching projects!");
+        yield put(setError(error.message));
     }
     finally {
         yield put(setLoading(false));
