@@ -1,3 +1,4 @@
+import { useSelector, useDispatch } from 'react-redux';
 import { ReactComponent as Slider } from '../../../images/slider.svg';
 import {
     StyledSwitch,
@@ -7,22 +8,28 @@ import {
     SwitchText,
     Container,
 } from './styled';
+import { selectDarkMode, toggleDarkMode } from '../modesSlice';
 
-const Switch = () => (
-    <Container>
-        <StyledSwitch>
-            <SwitchText>
-                Dark mode off
-            </SwitchText>
+const Switch = () => {
+    const dispatch = useDispatch();
+    const darkMode = useSelector(selectDarkMode);
 
-            <SwitchIcon>
-                <SliderWrapper>
-                    <Slider />
-                </SliderWrapper>
-                <StyledBrightness />
-            </SwitchIcon>
-        </StyledSwitch>
-    </Container>
-);
+    return (
+        <Container>
+            <StyledSwitch onClick={() => dispatch(toggleDarkMode)}>
+                <SwitchText>
+                    Dark mode {darkMode ? "on" : "off"}
+                </SwitchText>
+
+                <SwitchIcon>
+                    <SliderWrapper>
+                        <Slider />
+                    </SliderWrapper>
+                    <StyledBrightness />
+                </SwitchIcon>
+            </StyledSwitch>
+        </Container>
+    );
+};
 
 export default Switch; 
