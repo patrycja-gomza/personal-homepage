@@ -1,7 +1,9 @@
+const localStorageKey = "darkMode";
+
 export const saveDarkModePreferenceToLocalStorage = (darkMode) =>
-    localStorage.setItem('darkMode', darkMode);
+    localStorage.setItem(localStorageKey, darkMode);
 
 export const loadDarkModePreferenceFromLocalStorage = () => {
-    const darkMode = localStorage.getItem('darkMode');
+    const darkMode = localStorage.getItem(localStorageKey);
     return darkMode === 'true';
 };
