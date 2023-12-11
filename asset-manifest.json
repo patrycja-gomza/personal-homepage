@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.464516a0.js",
+    "main.js": "/personal-homepage-react/static/js/main.22736268.js",
     "static/js/787.b440d679.chunk.js": "/personal-homepage-react/static/js/787.b440d679.chunk.js",
     "static/media/woman.svg": "/personal-homepage-react/static/media/woman.f5b1f0192f4bd85640451e5986c782e5.svg",
     "static/media/pgomza.jpg": "/personal-homepage-react/static/media/pgomza.7ce10b12613819c6e01c.jpg",
@@ -13,15 +13,17 @@
     "static/media/logo-github.svg": "/personal-homepage-react/static/media/logo-github.d3d09a61307c2209c53df99bb2ec49ee.svg",
     "index.html": "/personal-homepage-react/index.html",
     "static/media/mark-github.svg": "/personal-homepage-react/static/media/mark-github.5b464170f634d5e87e004f07080cd478.svg",
+    "static/media/error-icon.svg": "/personal-homepage-react/static/media/error-icon.9c0e6ac0777a618b502b6f9779d7379e.svg",
     "static/media/logo-linkedin.svg": "/personal-homepage-react/static/media/logo-linkedin.2df5150382a175e0f65b5072583ec943.svg",
     "static/media/message.svg": "/personal-homepage-react/static/media/message.a2a199c0ca8e4fce475622ee0ec5b0a9.svg",
     "static/media/slider.svg": "/personal-homepage-react/static/media/slider.2581f03e57b74e39b8d89708f1ab5b45.svg",
     "static/media/logo-facebook.svg": "/personal-homepage-react/static/media/logo-facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
+    "static/media/loading-icon.svg": "/personal-homepage-react/static/media/loading-icon.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/ellipse31.svg": "/personal-homepage-react/static/media/ellipse31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.464516a0.js.map": "/personal-homepage-react/static/js/main.464516a0.js.map",
+    "main.22736268.js.map": "/personal-homepage-react/static/js/main.22736268.js.map",
     "787.b440d679.chunk.js.map": "/personal-homepage-react/static/js/787.b440d679.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.464516a0.js"
+    "static/js/main.22736268.js"
   ]
 }
