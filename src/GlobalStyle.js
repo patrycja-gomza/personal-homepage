@@ -13,11 +13,13 @@ html {
 
 #root {
   font-family: 'Inter', sans-serif;
-  background-color: ${({ theme }) => theme.color.whiteLilac};
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1216px;
+    margin: 0 auto;
+    max-width: 1216px;
+    color: ${({ theme }) => theme.color.mineShaft};
+    background-color: ${({ theme: { darkMode, color } }) => (
+    darkMode ? color.mineShaft : color.whiteLilac)};
 }
 `;
