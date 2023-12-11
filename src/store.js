@@ -11,9 +11,7 @@ const store = configureStore({
         projects: projectsReducer,
         modes: modesReducer,
     },
-
-    middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware),
+    middleware: () => [sagaMiddleware],
 });
 
 sagaMiddleware.run(rootSaga);
