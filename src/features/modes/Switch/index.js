@@ -16,7 +16,7 @@ const Switch = () => {
 
     return (
         <Container>
-            <StyledSwitch onClick={() => dispatch(toggleDarkMode)}>
+            <StyledSwitch onClick={() => dispatch(toggleDarkMode())}>
                 <SwitchText>
                     Dark mode {darkMode ? "on" : "off"}
                 </SwitchText>
