@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from "../../../styled";
+import { Button } from "../../../sharedStyled";
 
 export const ErrorTitle = styled.h3`
     font-size: ${({ theme }) => theme.fontSize.font24};

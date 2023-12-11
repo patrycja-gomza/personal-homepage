@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title, Paragraph } from "../../styled";
+import { Title, Paragraph } from "../../sharedStyled";
 
 export const StyledFooter = styled.footer`
     max-width: 691px;
