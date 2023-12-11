@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { loadDarkModePreferenceFromLocalStorage } from './modesLocalStorage';
 
 const modesSlice = createSlice({
     name: 'modes',
     initialState: {
-        darkMode: false,
+        darkMode: loadDarkModePreferenceFromLocalStorage(),
     },
     reducers: {
         toggleDarkMode: (state) => {
@@ -13,6 +14,8 @@ const modesSlice = createSlice({
 });
 
 export const { toggleDarkMode } = modesSlice.actions;
-export const selectDarkMode = (state) => state.modes.darkMode;
+
+export const selectModeState = (state) => state.modes;
+export const selectDarkMode = (state) => selectModeState(state).darkMode;
 
 export default modesSlice.reducer;
