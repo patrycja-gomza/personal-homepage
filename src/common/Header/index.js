@@ -4,7 +4,7 @@ import { ReactComponent as EmailIcon } from '../../images/message.svg';
 import emojiWoman from "../../images/woman.svg";
 import emojiPc from "../../images/pc.svg";
 import { StyledHeader, StyledPhoto, Wrapper } from './styled';
-import { Intro, Title, Paragraph, Button } from '../../sharedStyled';
+import { Intro, Title, Paragraph, Button } from '../../styles/sharedStyled';
 
 const Header = () => {
     const name = personalData.name;
