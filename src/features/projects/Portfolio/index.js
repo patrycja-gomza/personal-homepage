@@ -17,22 +17,18 @@ import {
 } from '../projectsSlice';
 import Loading from "../Loading";
 import Error from "../Error";
+import useShortenProjectName from "./useShortenProjectName";
 
 const Portfolio = () => {
     const dispatch = useDispatch();
     const projects = useSelector(selectProjects);
     const loading = useSelector(selectLoading);
     const error = useSelector(selectError);
+    const shortenProjectName = useShortenProjectName();
 
     useEffect(() => {
         dispatch(fetchProjects());
     }, [dispatch]);
-
-    const shortenProjectName = (name) => {
-        const words = name.split('-');
-        const initials = words.map(word => word.slice(0, 2));
-        return initials.join('');
-    };
 
     return (
         <StyledArticle>
