@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme: { darkMode, color } }) => (
+    darkMode ? color.lightMineShaft : color.white)};
   box-shadow: ${({ theme }) => theme.shadow.boxShadow};
   border-radius: 4px;
   padding: 32px;
@@ -18,7 +19,8 @@ export const SectionBody = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme: { darkMode, color } }) => (
+    darkMode ? color.white : color.slateGray)};
   font-size: ${({ theme }) => theme.fontSize.font18};
   font-style: normal;
   font-weight: ${({ theme }) => theme.fontWeight.font400};
