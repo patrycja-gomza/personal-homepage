@@ -16,7 +16,8 @@ export const FooterTitle = styled(Title)`
 `;
 
 export const FooterParagraph = styled(Paragraph)`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.mineShaft)};
     font-size: ${({ theme }) => theme.fontSize.font18};
     letter-spacing: 0.9px;
     margin: 0 21px 56px 0;
