@@ -17,6 +17,7 @@ export const theme = {
     border: {
         borderHeader: "1px solid #D1D5DA4D",
         borderTile: "6px solid #D1D5DA4D",
+        borderHeaderDarkMode: "1px solid #D1D5DA1A",
     },
 
     fontSize: {
