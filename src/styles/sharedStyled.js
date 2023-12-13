@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Intro = styled.span`
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.slateGray)};
     font-size: ${({ theme }) => theme.fontSize.font12};
     font-style: normal;
     font-weight: ${({ theme }) => theme.fontWeight.font700};
@@ -10,7 +11,8 @@ export const Intro = styled.span`
 `;
 
 export const Title = styled.h1`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.mineShaft)};
     font-size: ${({ theme }) => theme.fontSize.font38};
     font-style: normal;
     font-weight: ${({ theme }) => theme.fontWeight.font900};
@@ -20,7 +22,8 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.slateGray)};
     font-size: ${({ theme }) => theme.fontSize.font20};
     font-style: normal;
     font-weight: ${({ theme }) => theme.fontWeight.font400};
@@ -35,8 +38,10 @@ export const SectionHeader = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeight.font900};
   line-height: normal;
   letter-spacing: 1.5px;
-  color: ${({ theme }) => theme.color.mineShaft};
-  border-bottom: ${({ theme }) => theme.border.borderHeader};
+  color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.mineShaft)};
+  border-bottom: ${({ theme: { darkMode, border } }) => (
+        darkMode ? border.borderHeaderDarkMode : border.borderHeader)};
   padding-bottom: 15px;
   margin: 0;
 `;
@@ -48,9 +53,11 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     gap: 16px;
-    border: ${({ theme }) => theme.border.borderHeader};
+    border: ${({ theme: { darkMode, border } }) => (
+        darkMode ? border.borderHeaderDarkMode : border.borderHeader)};
     border-radius: 4px;
-    background-color: ${({ theme }) => theme.color.scienceBlue};
+    background-color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
     color: ${({ theme }) => theme.color.white};
     text-align: center;
     font-size: ${({ theme }) => theme.fontSize.font20};
