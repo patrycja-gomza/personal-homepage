@@ -18,8 +18,9 @@ html {
 body {
     margin: 0 auto;
     max-width: 1216px;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme: { darkMode, color } }) => (
+      darkMode ? color.white : color.mineShaft)};
     background-color: ${({ theme: { darkMode, color } }) => (
-    darkMode ? color.mineShaft : color.whiteLilac)};
+      darkMode ? color.mineShaft : color.whiteLilac)};
 }
 `;
