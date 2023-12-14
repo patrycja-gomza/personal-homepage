@@ -1,6 +1,8 @@
 import personalData from './personalData.json';
 
 export const usePersonalData = () => {
+  const name = personalData.name;
+  const description = personalData.description;
   const email = personalData.email;
   const github = personalData.github;
   const facebook = personalData.facebook;
@@ -8,5 +10,5 @@ export const usePersonalData = () => {
   const instagram = personalData.instagram;
   const contactInvitation = personalData.contactInvitation;
 
-  return { email, github, facebook, linkedin, instagram, contactInvitation };
+  return { name, description, email, github, facebook, linkedin, instagram, contactInvitation };
 };

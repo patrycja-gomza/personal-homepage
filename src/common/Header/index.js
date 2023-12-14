@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import profilePhoto from '../../images/pgomza.jpg';
-import personalData from '../../data/personalData.json';
+import { usePersonalData } from '../../data/usePersonalData';
 import { ReactComponent as EmailIcon } from '../../images/message.svg';
 import emojiWoman from "../../images/woman.svg";
 import emojiWomanDark from "../../images/woman-dark.svg";
@@ -10,9 +10,7 @@ import { Intro, Title, Paragraph, Button } from '../../styles/sharedStyled';
 import { selectDarkMode } from '../../features/modes/modesSlice';
 
 const Header = () => {
-    const name = personalData.name;
-    const description = personalData.description;
-    const email = personalData.email;
+    const { name, description, email } = usePersonalData();
     const security = { target: '_blank', rel: 'noopener noreferrer' };
     const darkMode = useSelector(selectDarkMode);
 
