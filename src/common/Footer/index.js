@@ -1,4 +1,4 @@
-import personalData from '../../personalData.json';
+import personalData from '../../data/personalData.json';
 import { Intro } from "../../styles/sharedStyled";
 import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
 import { ReactComponent as EmojiHand } from '../../images/hand-fingers-crossed.svg';

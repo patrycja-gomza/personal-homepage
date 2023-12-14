@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import profilePhoto from '../../images/pgomza.jpg';
-import personalData from '../../personalData.json';
+import personalData from '../../data/personalData.json';
 import { ReactComponent as EmailIcon } from '../../images/message.svg';
 import emojiWoman from "../../images/woman.svg";
 import emojiWomanDark from "../../images/woman-dark.svg";

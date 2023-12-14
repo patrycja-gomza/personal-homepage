@@ -1,5 +1,5 @@
 import axios from 'axios';
-import personalData from '../../personalData.json';
+import personalData from '../../data/personalData.json';
 
 export const getProjectsFromAPI = async () => {
     try {

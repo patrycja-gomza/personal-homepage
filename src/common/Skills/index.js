@@ -1,5 +1,5 @@
 import { ReactComponent as ListMarker } from '../../images/ellipse31.svg';
-import personalData from '../../personalData.json';
+import personalData from '../../data/personalData.json';
 import { StyledSection, SectionBody, ListItem } from './styled';
 import { SectionHeader } from '../../styles/sharedStyled';
 
