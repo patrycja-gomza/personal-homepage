@@ -1,11 +1,7 @@
 import personalData from '../../personalData.json';
 import { Intro } from "../../styles/sharedStyled";
-import { StyledFooter, FooterTitle, FooterParagraph, Wrapper } from './styled';
+import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
 import { ReactComponent as EmojiHand } from '../../images/hand-fingers-crossed.svg';
-import { ReactComponent as LogoGithub } from '../../images/logo-github.svg';
-import { ReactComponent as LogoFacebook } from '../../images/logo-facebook.svg';
-import { ReactComponent as LogoLinkedin } from '../../images/logo-linkedin.svg';
-import { ReactComponent as LogoInstagram } from '../../images/logo-instagram.svg';
 
 const Footer = () => {
     const email = personalData.email;
@@ -31,16 +27,16 @@ const Footer = () => {
 
             <Wrapper>
                 <a href={github} title={github} {...security}>
-                    <LogoGithub />
+                    <StyledLogo name="github" />
                 </a>
                 <a href={facebook} title={facebook} {...security}>
-                    <LogoFacebook />
+                    <StyledLogo name="facebook" />
                 </a>
                 <a href={linkedin} title={linkedin} {...security}>
-                    <LogoLinkedin />
+                    <StyledLogo name="linkedin" />
                 </a>
                 <a href={instagram} title={instagram} {...security}>
-                    <LogoInstagram />
+                    <StyledLogo name="instagram" />
                 </a>
             </Wrapper>
         </StyledFooter>
