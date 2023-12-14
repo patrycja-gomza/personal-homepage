@@ -1,15 +1,10 @@
-import personalData from '../../data/personalData.json';
+import { usePersonalData } from '../../data/usePersonalData';
 import { Intro } from "../../styles/sharedStyled";
 import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
 import { ReactComponent as EmojiHand } from '../../images/hand-fingers-crossed.svg';
 
 const Footer = () => {
-    const email = personalData.email;
-    const github = personalData.github;
-    const facebook = personalData.facebook;
-    const linkedin = personalData.linkedin;
-    const instagram = personalData.instagram;
-    const contactInvitation = personalData.contactInvitation;
+    const { email, github, facebook, linkedin, instagram, contactInvitation } = usePersonalData();
     const security = { target: '_blank', rel: 'noopener noreferrer' };
 
     return (
