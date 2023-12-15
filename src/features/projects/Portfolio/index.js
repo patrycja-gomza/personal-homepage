@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ReactComponent as GitHubIcon } from '../../../images/mark-github.svg';
 import {
     StyledArticle,
     StyledHeader,
+    StyledGitHubIcon,
     Title, Subtitle,
     Wrapper,
     Tile,
@@ -33,7 +33,7 @@ const Portfolio = () => {
     return (
         <StyledArticle>
             <StyledHeader>
-                <GitHubIcon />
+                <StyledGitHubIcon />
                 <Title>Portfolio</Title>
                 <Subtitle>My recent projects</Subtitle>
             </StyledHeader>

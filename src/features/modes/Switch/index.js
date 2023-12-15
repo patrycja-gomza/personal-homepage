@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { ReactComponent as Slider } from '../../../images/slider.svg';
 import {
     StyledSwitch,
+    StyledSlider,
     SwitchIcon,
     SliderWrapper,
     StyledBrightness,
@@ -23,7 +23,7 @@ const Switch = () => {
 
                 <SwitchIcon>
                     <SliderWrapper>
-                        <Slider />
+                        <StyledSlider />
                     </SliderWrapper>
                     <StyledBrightness />
                 </SwitchIcon>

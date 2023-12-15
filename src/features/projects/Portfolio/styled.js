@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Paragraph, SectionHeader } from "../../../styles/sharedStyled";
+import { ReactComponent as GitHubIcon } from '../../../images/mark-github.svg';
 
 export const StyledArticle = styled.article`
     margin: 72px 0 120px;
@@ -8,7 +9,15 @@ export const StyledArticle = styled.article`
 export const StyledHeader = styled.header`
     display: flex;
     flex-direction: column;
-    align-items: center`;
+    align-items: center;
+`;
+
+export const StyledGitHubIcon = styled(GitHubIcon)`
+  	path {
+    	fill: ${({ theme: { darkMode, color } }) => (
+            darkMode ? color.dodgerBlue : color.scienceBlue)};
+    }
+`;
 
 export const Title = styled(SectionHeader)`
     border: none;
@@ -16,7 +25,8 @@ export const Title = styled(SectionHeader)`
 `;
 
 export const Subtitle = styled(Paragraph)`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.slateGray)};
     margin: 0 0 24px;
 `;
 
@@ -28,8 +38,10 @@ export const Wrapper = styled.div`
 
 export const Tile = styled.div`
     border-radius: 4px;
-    border: ${({ theme }) => theme.border.borderTile};
-    background-color: ${({ theme }) => theme.color.white};
+    border: ${({ theme: { darkMode, border } }) => (
+        darkMode ? border.borderTileDarkMode : border.borderTile)};
+    background-color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.lightMineShaft : color.white)};
     box-shadow: ${({ theme }) => theme.shadow.boxShadow};
     padding: 56px;
     display: grid;
@@ -37,7 +49,8 @@ export const Tile = styled.div`
 `;
 
 export const ProjectTitle = styled.h3`
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
     font-size: ${({ theme }) => theme.fontSize.font24};
     font-style: normal;
     font-weight: ${({ theme }) => theme.fontWeight.font700};
@@ -47,7 +60,8 @@ export const ProjectTitle = styled.h3`
 `;
 
 export const ProjectDescription = styled.p`
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.slateGray)};
     font-size: ${({ theme }) => theme.fontSize.font18};
     font-style: normal;
     font-weight: ${({ theme }) => theme.fontWeight.font400};
@@ -65,5 +79,6 @@ export const ProjectLinks = styled(ProjectDescription)`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
 `;

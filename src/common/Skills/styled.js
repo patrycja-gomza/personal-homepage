@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as ListMarker } from '../../images/ellipse31.svg';
 
 export const StyledSection = styled.section`
   background-color: ${({ theme: { darkMode, color } }) => (
@@ -30,4 +31,11 @@ export const ListItem = styled.li`
   grid-template-columns: auto 1fr;
 	gap: 16px;
 	align-items: center;
+`;
+
+export const StyledListMarker = styled(ListMarker)`
+  	circle {
+      fill: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
+  }
 `;

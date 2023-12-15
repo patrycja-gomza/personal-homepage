@@ -1,6 +1,5 @@
-import { ReactComponent as ListMarker } from '../../images/ellipse31.svg';
 import personalData from '../../data/personalData.json';
-import { StyledSection, SectionBody, ListItem } from './styled';
+import { StyledSection, SectionBody, ListItem, StyledListMarker } from './styled';
 import { SectionHeader } from '../../styles/sharedStyled';
 
 const Skills = ({ title, emoji, body }) => {
@@ -16,7 +15,7 @@ const Skills = ({ title, emoji, body }) => {
             <SectionBody>
                 {skills.map((skill, index) => (
                     <ListItem key={index}>
-                        <ListMarker /> {skill}
+                        <StyledListMarker /> {skill}
                     </ListItem>
                 ))}
             </SectionBody>
