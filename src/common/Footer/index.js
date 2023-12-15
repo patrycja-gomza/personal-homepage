@@ -2,21 +2,12 @@ import { usePersonalData } from '../../data/usePersonalData';
 import { Intro } from "../../styles/sharedStyled";
 import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
 import { ReactComponent as EmojiHand } from '../../images/hand-fingers-crossed.svg';
-import { ReactComponent as LogoGithub } from '../../images/logo-github.svg';
-import { ReactComponent as LogoFacebook } from '../../images/logo-facebook.svg';
-import { ReactComponent as LogoLinkedin } from '../../images/logo-linkedin.svg';
-import { ReactComponent as LogoInstagram } from '../../images/logo-instagram.svg';
+import { useLogos } from './useLogos';
 
 const Footer = () => {
-    const { email, github, facebook, linkedin, instagram, contactInvitation } = usePersonalData();
+    const { email, contactInvitation } = usePersonalData();
+    const logos = useLogos();
     const security = { target: '_blank', rel: 'noopener noreferrer' };
-
-    const logos = [
-        { link: github, name: "github", icon: LogoGithub },
-        { link: facebook, name: "facebook", icon: LogoFacebook },
-        { link: linkedin, name: "linkedin", icon: LogoLinkedin },
-        { link: instagram, name: "instagram", icon: LogoInstagram }
-    ];
 
     return (
         <StyledFooter>
