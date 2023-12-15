@@ -13,6 +13,7 @@ const Header = () => {
     const { name, description, email } = usePersonalData();
     const security = { target: '_blank', rel: 'noopener noreferrer' };
     const darkMode = useSelector(selectDarkMode);
+    const emojiStyle = { verticalAlign: 'middle', height: '30px' };
 
     return (
         <StyledHeader>
@@ -21,11 +22,8 @@ const Header = () => {
                 <Intro>This is</Intro>
                 <Title>{name}</Title>
                 <Paragraph>
-                    {darkMode ?
-                        <img src={emojiWomanDark} alt="emoji" height="30px" style={{ verticalAlign: 'middle' }} />
-                        :
-                        <img src={emojiWoman} alt="emoji" height="30px" style={{ verticalAlign: 'middle' }} />}
-                    <img src={emojiPc} alt="emoji" height="30px" style={{ verticalAlign: 'middle' }} />
+                    <img src={darkMode ? emojiWomanDark : emojiWoman} alt="emoji" style={emojiStyle} />
+                    <img src={emojiPc} alt="emoji" style={emojiStyle} />
                     {" "}
                     {description}
                 </Paragraph>
