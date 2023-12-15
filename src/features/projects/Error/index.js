@@ -1,11 +1,10 @@
-import { ReactComponent as ErrorIcon } from '../../../images/error-icon.svg';
 import { StatusContainer, StatusText } from '../styled';
-import { ErrorTitle, ErrorButton } from './styled';
+import { ErrorTitle, ErrorButton, StyledErrorIcon } from './styled';
 
 const Error = () => {
     return (
         <StatusContainer>
-            <ErrorIcon />
+            <StyledErrorIcon />
             <ErrorTitle>Ooops! Something went wrong...</ErrorTitle>
             <StatusText>
                 Sorry, failed to load Github projects.<br />

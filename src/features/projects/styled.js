@@ -9,7 +9,8 @@ export const StatusContainer = styled.div`
 `;
 
 export const StatusText = styled(Paragraph)`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.white : color.mineShaft)};
     margin: 0 0 48px;
     text-align: center;
 `;
