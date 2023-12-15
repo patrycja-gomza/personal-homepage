@@ -7,7 +7,7 @@ export const theme = {
         slateGray: "#6E7E91",
         dodgerBlue: "#2188FF",
         scienceBlue: "#0366D6",
-        lightMineShaft: "#363636",
+        lightMineShaft: "#363636B8",
         mineShaft: "#252525",
     },
 
@@ -19,6 +19,7 @@ export const theme = {
         borderHeader: "1px solid #D1D5DA4D",
         borderTile: "6px solid #D1D5DA4D",
         borderHeaderDarkMode: "1px solid #D1D5DA1A",
+        borderTileDarkMode: "6px solid #D1D5DA1A",
     },
 
     fontSize: {
