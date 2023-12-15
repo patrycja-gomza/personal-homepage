@@ -33,13 +33,6 @@ export const Wrapper = styled.div`
     grid-gap: 24px;
 `;
 
-export const StyledLogoGithub = styled(LogoGithub)`
-  path {
-    fill: ${({ theme: { darkMode, color } }) => (
-        darkMode ? color.white : color.mineShaft)};
-  }
-`;
-
 const logos = {
     github: LogoGithub,
     facebook: LogoFacebook,
