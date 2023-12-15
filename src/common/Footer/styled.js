@@ -1,9 +1,5 @@
 import styled from "styled-components";
 import { Title, Paragraph } from "../../styles/sharedStyled";
-import { ReactComponent as LogoGithub } from '../../images/logo-github.svg';
-import { ReactComponent as LogoFacebook } from '../../images/logo-facebook.svg';
-import { ReactComponent as LogoLinkedin } from '../../images/logo-linkedin.svg';
-import { ReactComponent as LogoInstagram } from '../../images/logo-instagram.svg';
 
 export const StyledFooter = styled.footer`
     max-width: 691px;
@@ -33,15 +29,8 @@ export const Wrapper = styled.div`
     grid-gap: 24px;
 `;
 
-const logos = {
-    github: LogoGithub,
-    facebook: LogoFacebook,
-    linkedin: LogoLinkedin,
-    instagram: LogoInstagram
-};
-
-export const StyledLogo = styled(({ name, ...props }) => {
-    const Logo = logos[name];
+export const StyledLogo = styled(({ name, icon, ...props }) => {
+    const Logo = icon;
     return <Logo {...props} />;
 })`
     path {
