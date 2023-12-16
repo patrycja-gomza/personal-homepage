@@ -13,6 +13,9 @@ export const theme = {
 
     shadow: {
         boxShadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
+        shadowButtonHover: "-2px -2px 0px 0px #8CC2FF, 2px 2px 0px 0px #8CC2FF, -2px 2px 0px 0px #8CC2FF, 2px -2px 0px 0px #8CC2FF",
+        shadowButtonHoverDarkMode: "-2px -2px 0px 0px #6D93BE, 2px 2px 0px 0px #6D93BE, -2px 2px 0px 0px #6D93BE, 2px -2px 0px 0px #6D93BE",
+        shadowButtonActive: "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
     },
 
     border: {
