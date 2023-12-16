@@ -13,6 +13,11 @@ export const FooterTitle = styled(Title)`
     letter-spacing: 1.6px;
     margin: 24px 0;
     text-decoration: none;
+    transition: color 0.3s linear;
+    &:hover {
+        color: ${({ theme: { darkMode, color } }) => (
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
+    }
 `;
 
 export const FooterParagraph = styled(Paragraph)`
@@ -36,5 +41,13 @@ export const StyledLogo = styled(({ name, icon, ...props }) => {
     path {
         fill: ${({ theme: { darkMode, color } }) => (
         darkMode ? color.white : color.mineShaft)};
+        transition: fill 0.3s linear;
+    }
+
+    &:hover {
+        path {
+            fill: ${({ theme: { darkMode, color } }) => (
+                darkMode ? color.dodgerBlue : color.scienceBlue)};
         }
-`;
+    }
+`; 
