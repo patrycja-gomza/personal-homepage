@@ -9,6 +9,7 @@ html {
 ::after,
 ::before {
   box-sizing: inherit;
+  transition: background-color 0.3s linear, color 0.3s linear;
 }
 
 #root {
