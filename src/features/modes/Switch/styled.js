@@ -35,10 +35,8 @@ export const StyledBrightness = styled(Brightness)`
     border-radius: 10px;
     position: absolute;
     top: 3px;
-	left: ${({ theme: { darkMode } }) =>
-		darkMode ? '' : '3px'};
-    right: ${({ theme: { darkMode } }) =>
-		darkMode ? '3px' : ''};
+	transform: translateX(${({ theme: { darkMode } }) => (darkMode ? '120%' : '20%')});
+    transition: transform 0.3s linear;
   }
 `;
 
