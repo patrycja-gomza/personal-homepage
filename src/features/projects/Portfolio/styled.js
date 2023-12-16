@@ -46,6 +46,12 @@ export const Tile = styled.div`
     padding: 56px;
     display: grid;
     grid-gap: 24px;
+    transition: all 0.3s linear;
+    &:hover {
+        box-shadow: ${({ theme }) => theme.shadow.boxShadowHover};
+        border: ${({ theme: { darkMode, border } }) => (
+        darkMode ? border.borderTileHoverDM : border.borderTileHoverLM)};
+    }
 `;
 
 export const ProjectTitle = styled.h3`
