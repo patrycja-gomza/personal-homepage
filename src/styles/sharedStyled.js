@@ -39,9 +39,9 @@ export const SectionHeader = styled.h2`
     line-height: normal;
     letter-spacing: 1.5px;
     color: ${({ theme: { darkMode, color } }) => (
-            darkMode ? color.white : color.mineShaft)};
+        darkMode ? color.white : color.mineShaft)};
     border-bottom: ${({ theme: { darkMode, border } }) => (
-            darkMode ? border.borderHeaderDarkMode : border.borderHeader)};
+        darkMode ? border.borderHeaderDarkMode : border.borderHeader)};
     padding-bottom: 15px;
     margin: 0;
 `;
@@ -66,4 +66,11 @@ export const Button = styled.button`
     line-height: normal;
     letter-spacing: 1px;
     text-decoration: none;
+    &:hover {
+        box-shadow: ${({ theme: { darkMode, shadow } }) => (
+        darkMode ? shadow.shadowButtonHoverDarkMode : shadow.shadowButtonHover)};
+    }
+    &:active {
+        box-shadow: ${({ theme }) => theme.shadow.shadowButtonActive};
+    }
 `;
