@@ -81,4 +81,11 @@ export const ProjectLinks = styled(ProjectDescription)`
 export const Link = styled.a`
     color: ${({ theme: { darkMode, color } }) => (
         darkMode ? color.dodgerBlue : color.scienceBlue)};
+    text-underline-offset: 4px;
+    text-decoration-thickness: 0.02em;
+    transition: text-decoration-thickness 0.3s linear; 
+
+&:hover {
+    text-decoration-thickness: 0.08em;
+}
 `;
