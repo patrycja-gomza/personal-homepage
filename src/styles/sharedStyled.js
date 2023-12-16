@@ -66,6 +66,7 @@ export const Button = styled.button`
     line-height: normal;
     letter-spacing: 1px;
     text-decoration: none;
+    transition: box-shadow 0.3s linear;
     &:hover {
         box-shadow: ${({ theme: { darkMode, shadow } }) => (
         darkMode ? shadow.shadowButtonHoverDarkMode : shadow.shadowButtonHover)};
