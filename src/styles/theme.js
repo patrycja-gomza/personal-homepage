@@ -13,6 +13,7 @@ export const theme = {
 
     shadow: {
         boxShadow: "0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305",
+        boxShadowHover: "0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02)",
         shadowButtonHover: "-2px -2px 0px 0px #8CC2FF, 2px 2px 0px 0px #8CC2FF, -2px 2px 0px 0px #8CC2FF, 2px -2px 0px 0px #8CC2FF",
         shadowButtonHoverDarkMode: "-2px -2px 0px 0px #6D93BE, 2px 2px 0px 0px #6D93BE, -2px 2px 0px 0px #6D93BE, 2px -2px 0px 0px #6D93BE",
         shadowButtonActive: "0px 2px 0px 0px rgba(20, 70, 32, 0.20) inset",
@@ -21,6 +22,8 @@ export const theme = {
     border: {
         borderHeader: "1px solid #D1D5DA4D",
         borderTile: "6px solid #D1D5DA4D",
+        borderTileHoverLM: "6px solid rgba(3, 102, 214, 0.20);",
+        borderTileHoverDM: "6px solid rgba(3, 102, 214, 0.50);",
         borderHeaderDarkMode: "1px solid #D1D5DA1A",
         borderTileDarkMode: "6px solid #D1D5DA1A",
     },
