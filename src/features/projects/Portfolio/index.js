@@ -4,7 +4,7 @@ import {
     StyledArticle,
     StyledHeader,
     StyledGitHubIcon,
-    Title, Subtitle,
+    PortfolioTitle, PortfolioSubtitle,
     Wrapper,
     Tile,
     ProjectTitle,
@@ -34,8 +34,8 @@ const Portfolio = () => {
         <StyledArticle>
             <StyledHeader>
                 <StyledGitHubIcon />
-                <Title>Portfolio</Title>
-                <Subtitle>My recent projects</Subtitle>
+                <PortfolioTitle>Portfolio</PortfolioTitle>
+                <PortfolioSubtitle>My recent projects</PortfolioSubtitle>
             </StyledHeader>
             {loading && <Loading />}
             {error ? (
