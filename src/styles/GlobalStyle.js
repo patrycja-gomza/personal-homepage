@@ -20,8 +20,15 @@ body {
     margin: 0 auto;
     max-width: 1216px;
     color: ${({ theme: { darkMode, color } }) => (
-      darkMode ? color.white : color.mineShaft)};
+    darkMode ? color.white : color.mineShaft)};
     background-color: ${({ theme: { darkMode, color } }) => (
-      darkMode ? color.mineShaft : color.whiteLilac)};
+    darkMode ? color.mineShaft : color.whiteLilac)};
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+      padding: 16px;
+    }
 }
 `;
