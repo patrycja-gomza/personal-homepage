@@ -19,6 +19,12 @@ export const Title = styled.h1`
     line-height: normal;
     letter-spacing: 1.9px;
     margin: 12px 0 35px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: ${({ theme }) => theme.fontSize.font22};
+        letter-spacing: 1.1px;
+        margin: 8px 0 16px; 
+    }
 `;
 
 export const Paragraph = styled.p`
@@ -30,6 +36,12 @@ export const Paragraph = styled.p`
     line-height: 1.4;
     letter-spacing: 1px;
     margin: 0 0 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: ${({ theme }) => theme.fontSize.font17};
+        letter-spacing: 0.85px;
+        margin: 0 0 24px; 
+    }
 `;
 
 export const SectionHeader = styled.h2`
@@ -44,6 +56,12 @@ export const SectionHeader = styled.h2`
         darkMode ? border.borderHeaderDarkMode : border.borderHeader)};
     padding-bottom: 15px;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: ${({ theme }) => theme.fontSize.font18};
+        letter-spacing: 0.9px;
+        padding-bottom: 12px; 
+    }
 `;
 
 export const Button = styled.button`
@@ -73,5 +91,10 @@ export const Button = styled.button`
     }
     &:active {
         box-shadow: ${({ theme }) => theme.shadow.shadowButtonActive};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: ${({ theme }) => theme.fontSize.font18};
+        letter-spacing: 0.9px; 
     }
 `;
