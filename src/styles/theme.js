@@ -32,8 +32,10 @@ export const theme = {
         font12: "12px",
         font14: "14px",
         font16: "16px",
+        font17: "17px",
         font18: "18px",
         font20: "20px",
+        font22: "22px",
         font24: "24px",
         font30: "30px",
         font38: "38px",
@@ -49,6 +51,6 @@ export const theme = {
     breakpoint: {
         mobile: 768,
         tablet: 992,
-        laptop: 1200,
+        //laptop: 1200,
     },
 };
