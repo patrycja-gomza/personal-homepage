@@ -4,6 +4,10 @@ import { ReactComponent as GitHubIcon } from '../../../images/mark-github.svg';
 
 export const StyledArticle = styled.article`
     margin: 72px 0 120px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        margin: 48px 0 48px;
+    }
 `;
 
 export const StyledHeader = styled.header`
@@ -15,16 +19,21 @@ export const StyledHeader = styled.header`
 export const StyledGitHubIcon = styled(GitHubIcon)`
   	path {
     	fill: ${({ theme: { darkMode, color } }) => (
-            darkMode ? color.dodgerBlue : color.scienceBlue)};
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        width: 32px;
+        height: auto;
     }
 `;
 
-export const Title = styled(SectionHeader)`
+export const PortfolioTitle = styled(SectionHeader)`
     border: none;
     padding: 12px 0 8px;
 `;
 
-export const Subtitle = styled(Paragraph)`
+export const PortfolioSubtitle = styled(Paragraph)`
     color: ${({ theme: { darkMode, color } }) => (
         darkMode ? color.white : color.slateGray)};
     margin: 0 0 24px;
@@ -34,6 +43,18 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
+    
+    @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 `;
 
 export const Tile = styled.div`
@@ -52,6 +73,13 @@ export const Tile = styled.div`
         border: ${({ theme: { darkMode, border } }) => (
         darkMode ? border.borderTileHoverDM : border.borderTileHoverLM)};
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px;
+    }
 `;
 
 export const ProjectTitle = styled.h3`
@@ -63,6 +91,11 @@ export const ProjectTitle = styled.h3`
     line-height: normal;
     letter-spacing: 1.2px;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        font-size: ${({ theme }) => theme.fontSize.font16};
+        letter-spacing: 0.8px;
+    }
 `;
 
 export const ProjectDescription = styled.p`
@@ -75,6 +108,11 @@ export const ProjectDescription = styled.p`
     letter-spacing: 0.9px;
     margin: 0;
     text-align: justify;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: ${({ theme }) => theme.fontSize.font14};
+    letter-spacing: 0.7px;
+    }
 `;
 
 export const ProjectLinks = styled(ProjectDescription)`
@@ -82,6 +120,10 @@ export const ProjectLinks = styled(ProjectDescription)`
     grid-template-columns: auto 1fr;
     grid-gap: 8px;
     align-self: end;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        align-self: start;
+    }
 `;
 
 export const Link = styled.a`

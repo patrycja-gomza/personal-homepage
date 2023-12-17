@@ -66,6 +66,10 @@ export const SwitchText = styled.span`
     font-weight: ${({ theme }) => theme.fontWeight.font700};
     line-height: 1.3;
     text-transform: uppercase;
+
+	@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        display: none;
+    }
 `;
 
 export const Container = styled.div`
@@ -73,4 +77,8 @@ export const Container = styled.div`
 	margin: 115px 0 -115px;
 	display: grid;
 	position: relative;
+
+	@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        margin: 32px 0 -32px;
+    }
 `;
