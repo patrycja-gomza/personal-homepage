@@ -29,6 +29,7 @@ body {
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
       padding: 16px;
+      margin: 16px;
     }
 }
 `;
