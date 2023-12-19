@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+# Welcome to my React-based Personal Homepage!
+![OpenGraph Homepage](https://github.com/patrycja-gomza/personal-homepage-react/blob/main/readme_image.png?raw=true)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo
+https://patrycja-gomza.github.io/personal-homepage-react/
+
+## General Info
+Explore my front-end programming skills showcased in this React project, a testament to my dedication to mastering the art and science of creating captivating user interfaces. Crafted through meticulous learning and hands-on experience, this site represents not only my technical proficiency but also a harmonious blend of design aesthetics and functional excellence.
+
+Each component reflects my commitment to staying current with industry best practices, from responsive design principles to the seamless integration of cutting-edge technologies. I invite you to explore various sections, each highlighting a facet of my capabilities as a front-end developer.
+
+Thank you for visiting, and I hope you enjoy navigating through the culmination of my programming journey!
+
+## Technologies
+This project incorporates a variety of technologies and tools, including but not limited to:
+- JSX (JavaScript XML) 
+- Flexbox 
+- CSS Grid
+- JavaScript ES6+ Features
+- React.js
+- Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
+- Styled components (utilization of syntax with template literals)
+- Media Queries
+- Immutability with the immer library in Redux (for state management)
+- Custom Hooks
+- Local Storage with Redux-Saga
+- Redux (utilizing actions, reducers, and middleware for asynchronous operations) 
+- JavaScript generator functions (pause and resume functions), providing a mechanism for powerful asynchronous programming
+- Axios
+- Async/Await
+- API Integration
+
+## Status
+This project reflects my recent journey into front-end development, showcasing skills acquired over the past few months.
+
+## Inspiration
+This website is inspired by the course "Frontend Developer from the Basics" by the online programming school YouCode.
 
 ## Available Scripts
 
