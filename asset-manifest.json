@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.b57dd5c5.js",
+    "main.js": "/personal-homepage-react/static/js/main.e57aa610.js",
     "static/js/787.b440d679.chunk.js": "/personal-homepage-react/static/js/787.b440d679.chunk.js",
-    "static/media/woman-dark.svg": "/personal-homepage-react/static/media/woman-dark.ac11024b7d0fd06a8e6bbd6d74045a0c.svg",
-    "static/media/woman.svg": "/personal-homepage-react/static/media/woman.f5b1f0192f4bd85640451e5986c782e5.svg",
+    "static/media/woman.svg": "/personal-homepage-react/static/media/woman.2965a76976ad7ed165595c638f83d974.svg",
     "static/media/pgomza.jpg": "/personal-homepage-react/static/media/pgomza.7ce10b12613819c6e01c.jpg",
     "static/media/hand-fingers-crossed.svg": "/personal-homepage-react/static/media/hand-fingers-crossed.b7d3f250925fa8b5b15cd22766a1fd56.svg",
     "static/media/tools.svg": "/personal-homepage-react/static/media/tools.f542a6d54838a956766ac6e8677ada5b.svg",
@@ -21,10 +20,10 @@
     "static/media/logo-facebook.svg": "/personal-homepage-react/static/media/logo-facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
     "static/media/loading-icon.svg": "/personal-homepage-react/static/media/loading-icon.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/ellipse31.svg": "/personal-homepage-react/static/media/ellipse31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.b57dd5c5.js.map": "/personal-homepage-react/static/js/main.b57dd5c5.js.map",
+    "main.e57aa610.js.map": "/personal-homepage-react/static/js/main.e57aa610.js.map",
     "787.b440d679.chunk.js.map": "/personal-homepage-react/static/js/787.b440d679.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b57dd5c5.js"
+    "static/js/main.e57aa610.js"
   ]
 }
