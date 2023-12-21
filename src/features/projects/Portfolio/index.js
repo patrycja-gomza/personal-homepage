@@ -17,14 +17,13 @@ import {
 } from '../projectsSlice';
 import Loading from "../Loading";
 import Error from "../Error";
-import useShortenProjectName from "./useShortenProjectName";
+import shortenProjectName from "./shortenProjectName";
 
 const Portfolio = () => {
     const dispatch = useDispatch();
     const projects = useSelector(selectProjects);
     const loading = useSelector(selectLoading);
     const error = useSelector(selectError);
-    const shortenProjectName = useShortenProjectName();
 
     useEffect(() => {
         dispatch(fetchProjects());
