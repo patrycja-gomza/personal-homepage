@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.648d84ac.js",
+    "main.js": "/personal-homepage-react/static/js/main.940bae8d.js",
     "static/js/787.b440d679.chunk.js": "/personal-homepage-react/static/js/787.b440d679.chunk.js",
     "static/media/woman.svg": "/personal-homepage-react/static/media/woman.2965a76976ad7ed165595c638f83d974.svg",
     "static/media/pgomza.jpg": "/personal-homepage-react/static/media/pgomza.7ce10b12613819c6e01c.jpg",
@@ -20,10 +20,10 @@
     "static/media/logo-facebook.svg": "/personal-homepage-react/static/media/logo-facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
     "static/media/loading-icon.svg": "/personal-homepage-react/static/media/loading-icon.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/ellipse31.svg": "/personal-homepage-react/static/media/ellipse31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.648d84ac.js.map": "/personal-homepage-react/static/js/main.648d84ac.js.map",
+    "main.940bae8d.js.map": "/personal-homepage-react/static/js/main.940bae8d.js.map",
     "787.b440d679.chunk.js.map": "/personal-homepage-react/static/js/787.b440d679.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.648d84ac.js"
+    "static/js/main.940bae8d.js"
   ]
 }
