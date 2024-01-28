@@ -5,6 +5,7 @@ import Portfolio from "./features/projects/Portfolio";
 import Footer from "./common/Footer";
 import emojiTools from "./images/tools.svg";
 import emojiRocket from "./images/rocket.svg";
+import personalData from './data/personalData.json';
 
 function App() {
   return (
@@ -15,12 +16,12 @@ function App() {
         <Skills
           title="My skillset includes"
           emoji={emojiTools}
-          body="currentSkills"
+          skills={personalData.currentSkills}
         />
         <Skills
           title="What I want to learn next"
           emoji={emojiRocket}
-          body="futureSkills"
+          skills={personalData.futureSkills}
         />
         <Portfolio />
       </main >

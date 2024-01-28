@@ -1,10 +1,7 @@
-import personalData from '../../data/personalData.json';
 import { StyledSection, SectionBody, ListItem, StyledListMarker } from './styled';
 import { SectionHeader } from '../../styles/sharedStyled';
 
-const Skills = ({ title, emoji, body }) => {
-    const skills = personalData[body];
-
+const Skills = ({ title, emoji, skills }) => {
     return (
         <StyledSection>
             <SectionHeader>
