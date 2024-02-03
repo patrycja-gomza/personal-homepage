@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Paragraph } from "../../styles/sharedStyled";
+import { Paragraph } from "../sharedStyled";
 
 export const StatusContainer = styled.div`
     display: flex;

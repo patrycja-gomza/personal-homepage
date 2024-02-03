@@ -8,7 +8,7 @@ import {
     SwitchText,
     Container,
 } from './styled';
-import { selectDarkMode, toggleDarkMode } from '../modesSlice';
+import { selectDarkMode, toggleDarkMode } from './modesSlice';
 
 const Switch = () => {
     const dispatch = useDispatch();

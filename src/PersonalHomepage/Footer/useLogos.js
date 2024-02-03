@@ -1,8 +1,8 @@
-import { usePersonalData } from '../../data/usePersonalData';
-import { ReactComponent as LogoGithub } from '../../images/logo-github.svg';
-import { ReactComponent as LogoFacebook } from '../../images/logo-facebook.svg';
-import { ReactComponent as LogoLinkedin } from '../../images/logo-linkedin.svg';
-import { ReactComponent as LogoInstagram } from '../../images/logo-instagram.svg';
+import { usePersonalData } from '..//usePersonalData';
+import { ReactComponent as LogoGithub } from '../images/logo-github.svg';
+import { ReactComponent as LogoFacebook } from '../images/logo-facebook.svg';
+import { ReactComponent as LogoLinkedin } from '../images/logo-linkedin.svg';
+import { ReactComponent as LogoInstagram } from '../images/logo-instagram.svg';
 
 export const useLogos = () => {
     const { github, facebook, linkedin, instagram } = usePersonalData();

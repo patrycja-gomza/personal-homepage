@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as ListMarker } from '../../images/ellipse31.svg';
+import { ReactComponent as ListMarker } from '../images/ellipse31.svg';
 
 export const StyledSection = styled.section`
   background-color: ${({ theme: { darkMode, color } }) => (

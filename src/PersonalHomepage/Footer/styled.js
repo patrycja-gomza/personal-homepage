@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title, Paragraph } from "../../styles/sharedStyled";
+import { Title, Paragraph } from "../../sharedStyled";
 
 export const StyledFooter = styled.footer`
     max-width: 691px;
@@ -69,7 +69,7 @@ export const StyledLogo = styled(({ name, icon, ...props }) => {
     &:hover {
         path {
             fill: ${({ theme: { darkMode, color } }) => (
-                darkMode ? color.dodgerBlue : color.scienceBlue)};
+        darkMode ? color.dodgerBlue : color.scienceBlue)};
         }
     }
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {

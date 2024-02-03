@@ -1,4 +1,4 @@
-import { StatusContainer, StatusText } from '../styled';
+import { StatusContainer, StatusText } from '../../styled';
 import { ErrorTitle, ErrorButton, StyledErrorIcon } from './styled';
 
 const Error = () => {

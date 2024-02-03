@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as LoadingIcon } from '../../../images/loading-icon.svg';
+import { ReactComponent as LoadingIcon } from '../../images/loading-icon.svg';
 
 export const LoadingSpinner = styled(LoadingIcon)`
 	path {

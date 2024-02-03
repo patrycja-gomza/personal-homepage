@@ -1,10 +1,10 @@
-import profilePhoto from '../../images/pgomza.jpg';
-import { usePersonalData } from '../../data/usePersonalData';
-import { ReactComponent as EmailIcon } from '../../images/message.svg';
-import emojiWoman from "../../images/woman.svg";
-import emojiPc from "../../images/pc.svg";
+import profilePhoto from '../images/pgomza.jpg';
+import { usePersonalData } from '../usePersonalData';
+import { ReactComponent as EmailIcon } from '../images/message.svg';
+import emojiWoman from "../images/woman.svg";
+import emojiPc from "../images/pc.svg";
 import { StyledHeader, StyledPhoto, Wrapper } from './styled';
-import { Intro, Title, Paragraph, Button } from '../../styles/sharedStyled';
+import { Intro, Title, Paragraph, Button } from '../../sharedStyled';
 
 const Header = () => {
     const { name, description, email } = usePersonalData();
@@ -18,7 +18,7 @@ const Header = () => {
                 <Intro>This is</Intro>
                 <Title>{name}</Title>
                 <Paragraph>
-                    <img src= {emojiWoman} alt="emoji" style={emojiStyle} />
+                    <img src={emojiWoman} alt="emoji" style={emojiStyle} />
                     <img src={emojiPc} alt="emoji" style={emojiStyle} />
                     {" "}
                     {description}

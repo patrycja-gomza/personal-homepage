@@ -1,5 +1,5 @@
 import { LoadingSpinner } from './styled';
-import { StatusContainer, StatusText } from '../styled';
+import { StatusContainer, StatusText } from '../../styled';
 
 const Loading = () => (
     <StatusContainer>

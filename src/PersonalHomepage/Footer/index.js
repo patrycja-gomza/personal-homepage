@@ -1,7 +1,7 @@
-import { usePersonalData } from '../../data/usePersonalData';
-import { Intro } from "../../styles/sharedStyled";
+import { usePersonalData } from '../usePersonalData';
+import { Intro } from "../../sharedStyled";
 import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
-import { ReactComponent as EmojiHand } from '../../images/hand-fingers-crossed.svg';
+import { ReactComponent as EmojiHand } from '../images/hand-fingers-crossed.svg';
 import { useLogos } from './useLogos';
 
 const Footer = () => {

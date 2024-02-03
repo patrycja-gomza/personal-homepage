@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Paragraph, SectionHeader } from "../../../styles/sharedStyled";
-import { ReactComponent as GitHubIcon } from '../../../images/mark-github.svg';
+import { Paragraph, SectionHeader } from "../../sharedStyled";
+import { ReactComponent as GitHubIcon } from '../images/mark-github.svg';
 
 export const StyledArticle = styled.article`
     margin: 72px 0 120px;

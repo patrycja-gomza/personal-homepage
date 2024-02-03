@@ -15,8 +15,8 @@ import {
 import {
     fetchProjects, selectProjects, selectLoading, selectError
 } from '../projectsSlice';
-import Loading from "../Loading";
-import Error from "../Error";
+import Loading from "../States/Loading";
+import Error from "../States/Error";
 import shortenProjectName from "./shortenProjectName";
 
 const Portfolio = () => {

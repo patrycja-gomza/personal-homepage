@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as Brightness } from "../../../images/brightness.svg";
-import { ReactComponent as Slider } from '../../../images/slider.svg';
+import { ReactComponent as Brightness } from "../images/brightness.svg";
+import { ReactComponent as Slider } from '../images/slider.svg';
 
 export const SliderWrapper = styled.div`
 	position: relative;
@@ -11,18 +11,18 @@ export const SliderWrapper = styled.div`
 export const StyledSlider = styled(Slider)`
   	path {
     	fill: ${({ theme: { darkMode, color } }) => (
-			darkMode ? color.lightMineShaft : color.mercury)};
+		darkMode ? color.lightMineShaft : color.mercury)};
     	border: ${({ theme: { darkMode, color } }) => (
-			darkMode ? color.white : color.slateGray)};
+		darkMode ? color.white : color.slateGray)};
   }
 `;
 
 export const StyledBrightness = styled(Brightness)`
   	path {
     	fill: ${({ theme: { darkMode, color } }) =>
-			darkMode ? color.mineShaft : color.white};
+		darkMode ? color.mineShaft : color.white};
     	border: ${({ theme: { darkMode, color } }) =>
-			darkMode ? color.white : color.slateGray};
+		darkMode ? color.white : color.slateGray};
   }
   && {
     background-color: ${({ theme: { darkMode, color } }) =>

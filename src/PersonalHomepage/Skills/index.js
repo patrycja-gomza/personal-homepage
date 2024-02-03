@@ -1,5 +1,5 @@
 import { StyledSection, SectionBody, ListItem, StyledListMarker } from './styled';
-import { SectionHeader } from '../../styles/sharedStyled';
+import { SectionHeader } from '../../sharedStyled';
 
 const Skills = ({ title, emoji, skills }) => {
     return (
