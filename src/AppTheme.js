@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import { useSelector } from "react-redux";
 import { theme } from "./theme";
-import { selectDarkMode } from "./features/ModeSwitch/modesSlice";
+import { selectDarkMode } from "./PersonalHomepage/ModeSwitch/modesSlice";
 
 function AppTheme({ children }) {
     const darkMode = useSelector(selectDarkMode);
