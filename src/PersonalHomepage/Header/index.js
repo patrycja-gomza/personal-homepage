@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import profilePhoto from '../images/pgomza.jpg';
 import { usePersonalData } from '../usePersonalData';
 import { ReactComponent as EmailIcon } from '../images/message.svg';
@@ -13,7 +14,9 @@ const Header = () => {
 
     return (
         <StyledHeader>
-            <StyledPhoto src={profilePhoto} alt="Patrycja Gomza" />
+            <Link to="/art">
+                <StyledPhoto src={profilePhoto} alt="Patrycja Gomza" />
+            </Link>
             <Wrapper>
                 <Intro>This is</Intro>
                 <Title>{name}</Title>
