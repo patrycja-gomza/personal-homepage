@@ -1,33 +1,16 @@
-import ModeSwitch from "./PersonalHomepage/ModeSwitch";
-import Header from "./PersonalHomepage/Header";
-import Skills from "./PersonalHomepage/Skills";
-import Portfolio from "./PersonalHomepage/Portfolio";
-import Footer from "./PersonalHomepage/Footer";
-import emojiTools from "./PersonalHomepage/images/tools.svg";
-import emojiRocket from "./PersonalHomepage/images/rocket.svg";
-import personalData from './PersonalHomepage/personalData.json';
+import { HashRouter, Switch, Route } from "react-router-dom";
+import ArtPage from "./ArtPage";
+import PersonalHomepage from "./PersonalHomepage";
 
 function App() {
-  return (
-    <>
-      <ModeSwitch />
-      <Header />
-      <main>
-        <Skills
-          title="My skillset includes"
-          emoji={emojiTools}
-          skills={personalData.currentSkills}
-        />
-        <Skills
-          title="What I want to learn next"
-          emoji={emojiRocket}
-          skills={personalData.futureSkills}
-        />
-        <Portfolio />
-      </main >
-      <Footer />
-    </>
-  );
+    return (
+        <HashRouter>
+            <Switch>
+                <Route path="/art" component={ArtPage} />
+                <Route path="/" component={PersonalHomepage} />
+            </Switch>
+        </HashRouter>
+    );
 }
 
 export default App;
