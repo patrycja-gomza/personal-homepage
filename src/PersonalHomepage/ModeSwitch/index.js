@@ -10,7 +10,7 @@ import {
 } from './styled';
 import { selectDarkMode, toggleDarkMode } from './modesSlice';
 
-const Switch = () => {
+const ModeSwitch = () => {
     const dispatch = useDispatch();
     const darkMode = useSelector(selectDarkMode);
 
@@ -32,4 +32,4 @@ const Switch = () => {
     );
 };
 
-export default Switch; 
+export default ModeSwitch; 

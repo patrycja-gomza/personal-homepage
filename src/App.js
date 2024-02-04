@@ -1,4 +1,4 @@
-import Switch from "./PersonalHomepage/ModeSwitch";
+import ModeSwitch from "./PersonalHomepage/ModeSwitch";
 import Header from "./PersonalHomepage/Header";
 import Skills from "./PersonalHomepage/Skills";
 import Portfolio from "./PersonalHomepage/Portfolio";
@@ -10,7 +10,7 @@ import personalData from './PersonalHomepage/personalData.json';
 function App() {
   return (
     <>
-      <Switch />
+      <ModeSwitch />
       <Header />
       <main>
         <Skills
