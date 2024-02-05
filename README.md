@@ -1,5 +1,5 @@
 # Welcome to my React-based Personal Homepage!
-![OpenGraph Homepage](https://github.com/patrycja-gomza/personal-homepage-react/blob/main/readme_image.png?raw=true)
+![OpenGraph Homepage](https://github.com/patrycja-gomza/personal-homepage-react/blob/main/readme_image1.png?raw=true)
 
 ## Demo
 https://patrycja-gomza.github.io/personal-homepage-react/
