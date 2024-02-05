@@ -1,0 +1,43 @@
+{
+    "name": "Patrycja Gomza's other side",
+    "description": "I create unique websites with my beautiful 100% hand-drawn graphics to make you shine online!",
+    "email": "patrycja.gomza@gmail.com",
+    "pencilDrawings": [
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/pencilDrawing-hands.jpg?raw=true",
+            "orientation": "horizontal"
+        },
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/pencilDrawing-dog.jpg?raw=true",
+            "orientation": "vertical"
+        },
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/pencilDrawing-car.jpg?raw=true",
+            "orientation": "horizontal"
+        },
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/pencilDrawing-vases.jpg?raw=true",
+            "orientation": "vertical"
+        }
+    ],
+    "paintByNumbers": [
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/paintByNumbers-wolf.jpg?raw=true",
+            "orientation": "horizontal"
+        },
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/paintByNumbers-deers.jpg?raw=true",
+            "orientation": "vertical"
+        },
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/paintByNumbers-coffee.jpg?raw=true",
+            "orientation": "horizontal"
+        }
+    ],
+    "diamondPainting": [
+        {
+            "url": "https://github.com/patrycja-gomza/personal-homepage-react/blob/main/src/ArtPage/images/diamondPainting-bird.jpg?raw=true",
+            "orientation": "vertical"
+        }
+    ]
+}
