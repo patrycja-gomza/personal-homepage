@@ -6,12 +6,19 @@ import Footer from "./Footer";
 import emojiTools from "./images/tools.svg";
 import emojiRocket from "./images/rocket.svg";
 import personalData from './personalData.json';
+import profilePhoto from './images/pgomza.jpg';
+import { toArtPage } from "../routes";
 
 const PersonalHomepage = () => {
   return (
     <>
       <ModeSwitch />
-      <Header />
+      <Header
+        name={personalData.name}
+        to={toArtPage()}
+        photo={profilePhoto}
+        description={personalData.description}
+      />
       <main>
         <Skills
           title="My skillset includes"
