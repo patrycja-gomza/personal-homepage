@@ -1,7 +1,6 @@
 import Header from "../PersonalHomepage/Header";
 import ModeSwitch from "../PersonalHomepage/ModeSwitch";
-import Skills from "../PersonalHomepage/Skills";
-import { StyledArticle, StyledHeader, PortfolioTitle, ProjectTitle, Tile, Wrapper } from "../PersonalHomepage/Portfolio/styled";
+import ArtSkills from "./ArtSkills/index";
 import artData from "./artData.json";
 import artPhoto from "./images/pgomza-art.jpg";
 import emojiPencil from "./images/pencil.svg";
@@ -23,19 +22,19 @@ const ArtPage = () => {
                 isArtPage={true}
             />
             <main>
-                <Skills
+                <ArtSkills
                     title="Pencil drawings"
                     emoji={emojiPencil}
                     skills={artData.pencilDrawings}
                     isArtPage={true}
                 />
-                <Skills
+                <ArtSkills
                     title="Paint by numbers"
                     emoji={emojiPaint}
                     skills={artData.paintByNumbers}
                     isArtPage={true}
                 />
-                <Skills
+                <ArtSkills
                     title="Diamond painting"
                     emoji={emojiDiamond}
                     skills={artData.diamondPainting}
