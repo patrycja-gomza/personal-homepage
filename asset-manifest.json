@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.940bae8d.js",
+    "main.js": "/personal-homepage-react/static/js/main.b2f732a7.js",
     "static/js/787.b440d679.chunk.js": "/personal-homepage-react/static/js/787.b440d679.chunk.js",
+    "static/media/pgomza-art.jpg": "/personal-homepage-react/static/media/pgomza-art.34777ca1aa38d67cffbb.jpg",
+    "static/media/pgomza.jpg": "/personal-homepage-react/static/media/pgomza.4c6b15a7fbead53c36e0.jpg",
     "static/media/woman.svg": "/personal-homepage-react/static/media/woman.2965a76976ad7ed165595c638f83d974.svg",
-    "static/media/pgomza.jpg": "/personal-homepage-react/static/media/pgomza.7ce10b12613819c6e01c.jpg",
     "static/media/hand-fingers-crossed.svg": "/personal-homepage-react/static/media/hand-fingers-crossed.b7d3f250925fa8b5b15cd22766a1fd56.svg",
     "static/media/tools.svg": "/personal-homepage-react/static/media/tools.f542a6d54838a956766ac6e8677ada5b.svg",
     "static/media/rocket.svg": "/personal-homepage-react/static/media/rocket.606c2dea3605ec5c367e47485559c158.svg",
+    "static/media/artistpalette.svg": "/personal-homepage-react/static/media/artistpalette.076cec208c57ade6ed1772778e9903ac.svg",
     "static/media/pc.svg": "/personal-homepage-react/static/media/pc.b0ec33f60228b5b08e00beb50a9683fe.svg",
     "static/media/logo-instagram.svg": "/personal-homepage-react/static/media/logo-instagram.74575ffbddbc816213e60c3ebc0a820a.svg",
+    "static/media/diamond.svg": "/personal-homepage-react/static/media/diamond.84df1173e35c58b3ca4d786078a37aa5.svg",
     "static/media/brightness.svg": "/personal-homepage-react/static/media/brightness.02c8cdac85bb800b82a27bb3a3b8d60d.svg",
     "static/media/logo-github.svg": "/personal-homepage-react/static/media/logo-github.d3d09a61307c2209c53df99bb2ec49ee.svg",
     "index.html": "/personal-homepage-react/index.html",
@@ -16,14 +19,15 @@
     "static/media/error-icon.svg": "/personal-homepage-react/static/media/error-icon.9c0e6ac0777a618b502b6f9779d7379e.svg",
     "static/media/logo-linkedin.svg": "/personal-homepage-react/static/media/logo-linkedin.2df5150382a175e0f65b5072583ec943.svg",
     "static/media/message.svg": "/personal-homepage-react/static/media/message.a2a199c0ca8e4fce475622ee0ec5b0a9.svg",
+    "static/media/pencil.svg": "/personal-homepage-react/static/media/pencil.1de77eee121f4bea3da265202fb9e5eb.svg",
     "static/media/slider.svg": "/personal-homepage-react/static/media/slider.2581f03e57b74e39b8d89708f1ab5b45.svg",
     "static/media/logo-facebook.svg": "/personal-homepage-react/static/media/logo-facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
     "static/media/loading-icon.svg": "/personal-homepage-react/static/media/loading-icon.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/ellipse31.svg": "/personal-homepage-react/static/media/ellipse31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.940bae8d.js.map": "/personal-homepage-react/static/js/main.940bae8d.js.map",
+    "main.b2f732a7.js.map": "/personal-homepage-react/static/js/main.b2f732a7.js.map",
     "787.b440d679.chunk.js.map": "/personal-homepage-react/static/js/787.b440d679.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.940bae8d.js"
+    "static/js/main.b2f732a7.js"
   ]
 }
