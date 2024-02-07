@@ -15,16 +15,57 @@ export const StyledHeader = styled.header`
     }
 `;
 
-export const StyledPhoto = styled.img`
+export const PhotoWrapper = styled.div`
+    position: relative;
+    overflow: hidden;
     width: 398px;
     height: 398px;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center 15%;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         width: 132.667px;
         height: 132.667px;
+    }
+`;
+
+export const StyledPhoto = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: filter 0.3s ease;
+
+    ${PhotoWrapper}:hover & {
+        filter: brightness(90%) blur(3.5px);
+    }
+`;
+
+export const TextOverlay = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: ${({ theme }) => theme.fontSize.font30};
+    font-style: normal;
+    font-weight: ${({ theme }) => theme.fontWeight.font700};
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    color: ${({ theme }) => theme.color.white};
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    ${PhotoWrapper}:hover & {
+        opacity: 1;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+      font-size: ${({ theme }) => theme.fontSize.font16};
+      line-height: 1.15;
+      font-weight: ${({ theme }) => theme.fontWeight.font600};
+      padding: 0;
     }
 `;
 
