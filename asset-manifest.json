@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/personal-homepage-react/static/js/main.b2f732a7.js",
+    "main.js": "/personal-homepage-react/static/js/main.728e1194.js",
     "static/js/787.b440d679.chunk.js": "/personal-homepage-react/static/js/787.b440d679.chunk.js",
     "static/media/pgomza-art.jpg": "/personal-homepage-react/static/media/pgomza-art.34777ca1aa38d67cffbb.jpg",
     "static/media/pgomza.jpg": "/personal-homepage-react/static/media/pgomza.4c6b15a7fbead53c36e0.jpg",
     "static/media/woman.svg": "/personal-homepage-react/static/media/woman.2965a76976ad7ed165595c638f83d974.svg",
+    "static/media/clickhere.svg": "/personal-homepage-react/static/media/clickhere.8c73d2b6d76196a75e731921b1261880.svg",
     "static/media/hand-fingers-crossed.svg": "/personal-homepage-react/static/media/hand-fingers-crossed.b7d3f250925fa8b5b15cd22766a1fd56.svg",
     "static/media/tools.svg": "/personal-homepage-react/static/media/tools.f542a6d54838a956766ac6e8677ada5b.svg",
     "static/media/rocket.svg": "/personal-homepage-react/static/media/rocket.606c2dea3605ec5c367e47485559c158.svg",
@@ -24,10 +25,10 @@
     "static/media/logo-facebook.svg": "/personal-homepage-react/static/media/logo-facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
     "static/media/loading-icon.svg": "/personal-homepage-react/static/media/loading-icon.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/ellipse31.svg": "/personal-homepage-react/static/media/ellipse31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.b2f732a7.js.map": "/personal-homepage-react/static/js/main.b2f732a7.js.map",
+    "main.728e1194.js.map": "/personal-homepage-react/static/js/main.728e1194.js.map",
     "787.b440d679.chunk.js.map": "/personal-homepage-react/static/js/787.b440d679.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b2f732a7.js"
+    "static/js/main.728e1194.js"
   ]
 }
