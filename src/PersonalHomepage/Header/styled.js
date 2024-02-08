@@ -32,7 +32,6 @@ export const PhotoWrapper = styled.div`
 export const StyledClickHereIconArt = styled(clickHereIcon)`
     position: absolute;
     transform: translate(-50%, -50%) scale(0.3);
-    box-shadow: ${({ theme }) => theme.shadow.boxShadow};
     top: 17%;
     left: 31%;
       
