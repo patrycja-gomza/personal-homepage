@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as clickHereIcon } from "../../common/clickhere.svg";
 
 export const StyledHeader = styled.header`
     max-width: 1089px;
@@ -28,12 +29,30 @@ export const PhotoWrapper = styled.div`
     }
 `;
 
+export const StyledClickHereIconArt = styled(clickHereIcon)`
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.3);
+    box-shadow: ${({ theme }) => theme.shadow.boxShadow};
+    top: 17%;
+    left: 31%;
+      
+    ${PhotoWrapper}:hover & {
+        display: none;
+    }
+`;
+
+export const StyledClickHereIconHome = styled(StyledClickHereIconArt)`
+    top: 40%;
+    left: 80%;
+`;
+
 export const StyledPhoto = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     transition: filter 0.3s ease;
+    position: relative;
 
     ${PhotoWrapper}:hover & {
         filter: brightness(90%) blur(3.5px);
