@@ -3,7 +3,15 @@ import { usePersonalData } from '../usePersonalData';
 import { ReactComponent as EmailIcon } from '../images/message.svg';
 import emojiWoman from "../images/woman.svg";
 import emojiPc from "../images/pc.svg";
-import { StyledHeader, StyledPhoto, Wrapper, PhotoWrapper, TextOverlay } from './styled';
+import {
+    StyledHeader,
+    StyledPhoto,
+    Wrapper,
+    PhotoWrapper,
+    TextOverlay,
+    StyledClickHereIconArt,
+    StyledClickHereIconHome
+} from './styled';
 import { Intro, Title, Paragraph, Button } from '../../sharedStyled';
 
 const Header = ({ to, photo, name, description, isArtPage }) => {
@@ -16,11 +24,16 @@ const Header = ({ to, photo, name, description, isArtPage }) => {
             <NavLink to={to} style={{ textDecoration: 'none' }}>
                 <PhotoWrapper>
                     <StyledPhoto src={photo} alt="Patrycja Gomza" />
+                    {isArtPage ?
+                        <StyledClickHereIconArt />
+                        :
+                        <StyledClickHereIconHome />
+                    }
                     <TextOverlay>
-                        {isArtPage ? 
-                        "Back to home page" 
-                        : 
-                        "Click here & discover my other side"
+                        {isArtPage ?
+                            "Back to home page"
+                            :
+                            "Click here & discover my other side"
                         }
                     </TextOverlay>
                 </PhotoWrapper>
