@@ -38,11 +38,19 @@ export const StyledClickHereIconArt = styled(clickHereIcon)`
     ${PhotoWrapper}:hover & {
         display: none;
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        transform: translate(-30%, 150%) scale(0.43);
+    }
 `;
 
 export const StyledClickHereIconHome = styled(StyledClickHereIconArt)`
     top: 40%;
     left: 80%;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        transform: translate(-51%, -50%) scale(0.43);
+    }
 `;
 
 export const StyledPhoto = styled.img`
