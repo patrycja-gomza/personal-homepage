@@ -3,6 +3,7 @@ import { usePersonalData } from '../usePersonalData';
 import { ReactComponent as EmailIcon } from '../images/message.svg';
 import emojiWoman from "../images/woman.svg";
 import emojiPc from "../images/pc.svg";
+import { Intro, Title, Paragraph, Button } from '../../common/sharedStyled';
 import {
     StyledHeader,
     StyledPhoto,
@@ -12,7 +13,6 @@ import {
     StyledClickHereIconArt,
     StyledClickHereIconHome
 } from './styled';
-import { Intro, Title, Paragraph, Button } from '../../sharedStyled';
 
 const Header = ({ to, photo, name, description, isArtPage }) => {
     const { email } = usePersonalData();

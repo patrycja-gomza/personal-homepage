@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button } from "../../../sharedStyled";
+import { Button } from "../../../common/sharedStyled";
 import { ReactComponent as ErrorIcon } from '../../images/error-icon.svg';
 
 export const ErrorTitle = styled.h3`

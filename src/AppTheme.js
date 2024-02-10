@@ -1,8 +1,7 @@
-import React from "react";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "./GlobalStyle";
 import { useSelector } from "react-redux";
-import { theme } from "./theme";
+import { GlobalStyle } from "./app/GlobalStyle";
+import { theme } from "./app/theme";
 import { selectDarkMode } from "./PersonalHomepage/ModeSwitch/modesSlice";
 
 function AppTheme({ children }) {

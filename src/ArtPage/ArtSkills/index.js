@@ -1,5 +1,5 @@
-import { StyledSection, SectionBody, ListItem, TileImage, TileImageContainer } from './styled';
-import { SectionHeader } from '../../sharedStyled';
+import { StyledSection, SectionBody, TileImage, TileImageContainer } from './styled';
+import { SectionHeader } from '../../common/sharedStyled';
 
 const ArtSkills = ({ title, emoji, skills }) => {
     return (
@@ -12,14 +12,12 @@ const ArtSkills = ({ title, emoji, skills }) => {
             <SectionBody>
                 {skills.map((skill, index) => (
                     <TileImageContainer key={index}>
-                        
-                            <TileImage
-                                src={skill.url}
-                                alt="artskills"
-                                orientation={skill.orientation}
-                            />
-                        </TileImageContainer>
-                  
+                        <TileImage
+                            src={skill.url}
+                            alt="artskills"
+                            orientation={skill.orientation}
+                        />
+                    </TileImageContainer>
                 ))}
             </SectionBody>
         </StyledSection>

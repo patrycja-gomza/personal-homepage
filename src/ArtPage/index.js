@@ -6,11 +6,9 @@ import artPhoto from "./images/pgomza-art.jpg";
 import emojiPencil from "./images/pencil.svg";
 import emojiPaint from "./images/artistpalette.svg";
 import emojiDiamond from "./images/diamond.svg";
-import { toHomepage } from "../routes";
+import { toHomepage } from "../app/routes";
 
 const ArtPage = () => {
-    const categories = Object.keys(artData);
-
     return (
         <>
             <ModeSwitch />

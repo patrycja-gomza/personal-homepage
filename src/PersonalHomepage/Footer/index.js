@@ -1,5 +1,5 @@
 import { usePersonalData } from '../usePersonalData';
-import { Intro } from "../../sharedStyled";
+import { Intro } from "../../common/sharedStyled";
 import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
 import { ReactComponent as EmojiHand } from '../images/hand-fingers-crossed.svg';
 import { useLogos } from './useLogos';

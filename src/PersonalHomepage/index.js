@@ -7,7 +7,7 @@ import emojiTools from "./images/tools.svg";
 import emojiRocket from "./images/rocket.svg";
 import personalData from './personalData.json';
 import profilePhoto from './images/pgomza.jpg';
-import { toArtPage } from "../routes";
+import { toArtPage } from "../app/routes";
 
 const PersonalHomepage = () => {
   return (

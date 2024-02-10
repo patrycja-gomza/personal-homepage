@@ -1,7 +1,7 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import ArtPage from "./ArtPage";
 import PersonalHomepage from "./PersonalHomepage";
-import { toArtPage, toHomepage } from "./routes";
+import { toArtPage, toHomepage } from "./app/routes";
 
 function App() {
     return (
