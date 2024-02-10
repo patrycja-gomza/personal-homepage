@@ -1,11 +1,10 @@
-import { usePersonalData } from '../usePersonalData';
+import personalData from "../personalData.json";
 import { Intro } from "../../../common/Intro/Intro";
 import { StyledFooter, FooterTitle, FooterParagraph, Wrapper, StyledLogo } from './styled';
 import { ReactComponent as EmojiHand } from '../../../assets/hand-fingers-crossed.svg';
 import { useLogos } from './useLogos';
 
 const Footer = () => {
-    const { email, contactInvitation } = usePersonalData();
     const logos = useLogos();
     const security = { target: '_blank', rel: 'noopener noreferrer' };
 
@@ -13,19 +12,31 @@ const Footer = () => {
         <StyledFooter>
             <Intro>Let's talk!</Intro>
 
-            <FooterTitle as="a" href={`mailto:${email}`} title={email} {...security}>
-                {email}
+            <FooterTitle
+                as="a"
+                href={`mailto:${personalData.email}`}
+                title={personalData.email} {...security}
+            >
+                {personalData.email}
             </FooterTitle>
 
             <FooterParagraph>
-                {contactInvitation}
-                <EmojiHand style={{ verticalAlign: 'middle' }} />
+                {personalData.contactInvitation}
+                <EmojiHand
+                    style={{ verticalAlign: 'middle' }}
+                />
             </FooterParagraph>
 
             <Wrapper>
                 {logos.map(logo => (
-                    <a key={logo.name} href={logo.link} title={logo.link} {...security}>
-                        <StyledLogo name={logo.name} icon={logo.icon} />
+                    <a
+                        key={logo.name}
+                        href={logo.link}
+                        title={logo.link} {...security}
+                    >
+                        <StyledLogo
+                            name={logo.name}
+                            icon={logo.icon} />
                     </a>
                 ))}
             </Wrapper>

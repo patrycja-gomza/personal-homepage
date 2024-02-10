@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { usePersonalData } from '../usePersonalData';
+import personalData from '../personalData';
 import { ReactComponent as EmailIcon } from '../../../assets/message.svg';
 import emojiWoman from "../../../assets/woman.svg";
 import emojiPc from "../../../assets/pc.svg";
@@ -18,7 +18,6 @@ import {
 } from './styled';
 
 const Header = ({ to, photo, name, description, isArtPage }) => {
-    const { email } = usePersonalData();
     const security = { target: '_blank', rel: 'noopener noreferrer' };
     const emojiStyle = { verticalAlign: 'middle', height: '30px' };
 
@@ -50,7 +49,11 @@ const Header = ({ to, photo, name, description, isArtPage }) => {
                     {" "}
                     {description}
                 </Paragraph>
-                <Button as="a" href={`mailto:${email}`} title={email} {...security}>
+                <Button
+                    as="a"
+                    href={`mailto:${personalData.email}`}
+                    title={personalData.email} {...security}
+                >
                     <EmailIcon /> Hire Me
                 </Button>
             </Wrapper>
