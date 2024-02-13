@@ -11,6 +11,20 @@ Each component reflects my commitment to staying current with industry best prac
 
 Thank you for visiting, and I hope you enjoy navigating through the culmination of my programming journey!
 
+## Art Page - Patrycja Gomza's Other Side
+This section showcases a collection of my handcrafted artworks, including Pencil Drawings, Paint by Numbers, and Diamond Painting.
+
+To explore this artistic dimension, simply click on my profile picture, which serves as a gateway to "Patrycja Gomza's Other Side." Here, you'll find a visual feast of my creativity and dedication to producing unique graphics.
+
+### Categories
+- **Pencil Drawings:** Discover the beauty and intricacy of my pencil-drawn artworks, each telling a story through detailed strokes and shading.
+- **Paint by Numbers:** Immerse yourself in the world of color as I bring canvas to life through the meditative process of Paint by Numbers.
+- **Diamond Painting:** Experience the dazzling results of meticulous diamond placement, creating stunning and vibrant compositions.
+
+I believe in making the digital space shine with my 100% hand-drawn graphics, and this Art Page is a testament to that commitment.
+
+Thank you for taking the time to explore this artistic facet of my Personal Homepage!
+
 ## Technologies
 This project incorporates a variety of technologies and tools, including but not limited to:
 - JSX (JavaScript XML) 
