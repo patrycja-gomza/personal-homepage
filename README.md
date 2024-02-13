@@ -25,6 +25,10 @@ I believe in making the digital space shine with my 100% hand-drawn graphics, an
 
 Thank you for taking the time to explore this artistic facet of my Personal Homepage!
 
+<div style="text-align: center;">
+  <img src="https://github.com/patrycja-gomza/personal-homepage-react/blob/main/readme_image2.png?raw=true" alt="Art Page" style="max-width:500px;">
+</div>
+
 ## Technologies
 This project incorporates a variety of technologies and tools, including but not limited to:
 - JSX (JavaScript XML) 
