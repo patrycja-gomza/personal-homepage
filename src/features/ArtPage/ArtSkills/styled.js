@@ -36,6 +36,7 @@ export const TileImage = styled.img`
     object-fit: cover;
     box-shadow: ${({ theme }) => theme.shadow.boxShadow};
     border-radius: 6px;
+    cursor: pointer;
 
     ${(props) => props.orientation === "vertical" && css`
         height: 100%;
