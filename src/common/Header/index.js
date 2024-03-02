@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
-import personalData from '../personalData';
-import { ReactComponent as EmailIcon } from '../../../assets/message.svg';
-import emojiWoman from "../../../assets/woman.svg";
-import emojiPc from "../../../assets/pc.svg";
-import { Intro } from '../../../common/Intro/Intro';
-import { Title } from '../../../common/Title/Title';
-import { Paragraph } from '../../../common/Paragraph/Paragraph';
-import { Button } from '../../../common/Button/Button';
+import personalData from '../../features/PersonalHomepage';
+import { ReactComponent as EmailIcon } from '../../assets/message.svg';
+import emojiWoman from "../../assets/woman.svg";
+import emojiPc from "../../assets/pc.svg";
+import { Intro } from '../Intro/Intro';
+import { Title } from '../Title/Title';
+import { Paragraph } from '../Paragraph/Paragraph';
+import { Button } from '../Button/Button';
 import {
     StyledHeader,
     StyledPhoto,

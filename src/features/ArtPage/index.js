@@ -1,4 +1,4 @@
-import Header from "../../features/PersonalHomepage/Header";
+import Header from "../../common/Header";
 import ModeSwitch from "../../common/ModeSwitch";
 import ArtSkills from "./ArtSkills/index";
 import artData from "../ArtPage/artData.json";

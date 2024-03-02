@@ -1,5 +1,5 @@
 import ModeSwitch from "../../common/ModeSwitch";
-import Header from "./Header";
+import Header from "../../common/Header";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 import Footer from "./Footer";

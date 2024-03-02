@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as clickHereIcon } from "../../../assets/clickhere.svg";
+import { ReactComponent as clickHereIcon } from "../../assets/clickhere.svg";
 
 export const StyledHeader = styled.header`
     max-width: 1089px;
