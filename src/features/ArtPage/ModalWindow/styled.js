@@ -43,7 +43,7 @@ export const NavigationButton = styled.button`
   cursor: pointer;
 
   &:focus {
-    outline: none; /* Usuń dekoracje (outline) w stanie focus */
+    outline: none;
   }
 `;
 
