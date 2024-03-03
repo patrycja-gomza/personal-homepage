@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ModalOverlay, ModalContent, CloseButton, NavigationButton, EnlargedImage } from './styled';
+import { useKeyPressNavigation } from './useKeyPressNavigation';
 
 const ModalWindow = ({ imageUrl, onClose, onPrev, onNext }) => {
   useEffect(() => {
@@ -14,21 +15,8 @@ const ModalWindow = ({ imageUrl, onClose, onPrev, onNext }) => {
     }
   };
 
-  const handleKeyPress = (event) => {
-    switch (event.key) {
-      case 'ArrowLeft':
-        onPrev();
-        break;
-      case 'ArrowRight':
-        onNext();
-        break;
-      case 'Escape':
-        onClose();
-        break;
-      default:
-        break;
-    }
-  };
+  const handleKeyPress = useKeyPressNavigation(onPrev, onNext, onClose);
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress);
     return () => {
