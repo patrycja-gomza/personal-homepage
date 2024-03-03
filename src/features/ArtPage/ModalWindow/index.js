@@ -1,14 +1,11 @@
 import { useEffect } from 'react';
 import { ModalOverlay, ModalContent, CloseButton, NavigationButton, EnlargedImage } from './styled';
 import { useKeyPressNavigation } from './useKeyPressNavigation';
+import { useBodyOverflow } from './useBodyOverflow';
 
 const ModalWindow = ({ imageUrl, onClose, onPrev, onNext }) => {
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
+  useBodyOverflow('hidden');
+
   const handleOverlayClick = (event) => {
     if (event.target === event.currentTarget) {
       onClose();
