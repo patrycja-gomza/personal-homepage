@@ -1,4 +1,13 @@
-import { useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
+
+export const useKeyPress = (keyPressHandler) => {
+    useEffect(() => {
+        window.addEventListener('keydown', keyPressHandler);
+        return () => {
+            window.removeEventListener('keydown', keyPressHandler);
+        };
+    }, [keyPressHandler]);
+};
 
 export const useKeyPressNavigation = (onPrev, onNext, onClose) => {
     return useCallback((event) => {

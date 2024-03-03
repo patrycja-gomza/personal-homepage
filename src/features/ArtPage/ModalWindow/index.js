@@ -1,26 +1,18 @@
-import { useEffect } from 'react';
 import { ModalOverlay, ModalContent, CloseButton, NavigationButton, EnlargedImage } from './styled';
-import { useKeyPressNavigation } from './useKeyPressNavigation';
+import { useKeyPress, useKeyPressNavigation } from './useKeyPress';
 import { useBodyOverflow } from './useBodyOverflow';
 
 const ModalWindow = ({ imageUrl, onClose, onPrev, onNext }) => {
   useBodyOverflow('hidden');
+
+  const handleKeyPress = useKeyPressNavigation(onPrev, onNext, onClose);
+  useKeyPress(handleKeyPress);
 
   const handleOverlayClick = (event) => {
     if (event.target === event.currentTarget) {
       onClose();
     }
   };
-
-  const handleKeyPress = useKeyPressNavigation(onPrev, onNext, onClose);
-
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeyPress);
-    return () => {
-      window.removeEventListener('keydown', handleKeyPress);
-    };
-  }, [onPrev, onNext, onClose]);
-
 
   return (
     <ModalOverlay onClick={handleOverlayClick}>
