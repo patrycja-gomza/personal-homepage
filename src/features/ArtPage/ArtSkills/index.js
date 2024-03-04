@@ -1,36 +1,29 @@
 import { StyledSection, SectionBody, TileImage, TileImageContainer } from './styled';
 import { SectionHeader } from '../../../common/SectionHeader/SectionHeader';
 import ModalWindow from '../ModalWindow';
-import { useState } from 'react';
+import { useModalNavigation } from './useModalNavigation';
 
 const ArtSkills = ({ title, emoji, skills }) => {
-    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const openModal = (index) => {
-        setSelectedImageIndex(index);
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setSelectedImageIndex(null);
-        setIsModalOpen(false);
-    };
-
-    const goToPrevImage = () => {
-        setSelectedImageIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : skills.length - 1));
-    };
-
-    const goToNextImage = () => {
-        setSelectedImageIndex((prevIndex) => (prevIndex < skills.length - 1 ? prevIndex + 1 : 0));
-    };
+    const {
+        selectedItemIndex,
+        isModalOpen,
+        openModal,
+        closeModal,
+        goToPrevItem,
+        goToNextItem,
+    } = useModalNavigation(skills);
 
     return (
         <StyledSection>
             <SectionHeader>
                 {title}
                 {" "}
-                <img src={emoji} alt="emoji" height="32px" style={{ verticalAlign: 'middle' }} />
+                <img
+                    src={emoji}
+                    alt="emoji"
+                    height="32px"
+                    style={{ verticalAlign: 'middle' }}
+                />
             </SectionHeader>
             <SectionBody>
                 {skills.map((skill, index) => (
@@ -49,10 +42,10 @@ const ArtSkills = ({ title, emoji, skills }) => {
 
             {isModalOpen && (
                 <ModalWindow
-                    imageUrl={skills[selectedImageIndex].url}
+                    imageUrl={skills[selectedItemIndex].url}
                     onClose={closeModal}
-                    onPrev={goToPrevImage}
-                    onNext={goToNextImage}
+                    onPrev={goToPrevItem}
+                    onNext={goToNextItem}
                 />
             )}
         </StyledSection>
