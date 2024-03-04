@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StyledSection = styled.section`
     background-color: ${({ theme: { darkMode, color } }) => (
-    darkMode ? color.lightMineShaft : color.white)};
+        darkMode ? color.lightMineShaft : color.white)};
     box-shadow: ${({ theme }) => theme.shadow.boxShadow};
     border-radius: 4px;
     padding: 32px;
@@ -55,4 +55,16 @@ export const TileImageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(112%);
+    }
+
+    &:not(:hover) {
+        transition-delay: 0.3s;
+        transform: none;
+        filter: none;
+    }
 `;
